@@ -1,0 +1,47 @@
+@import 'baseStyles';
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContent {
+    height: 95%;
+    width: 100%;
+    // background-color: #ffffffbb;
+    .jamesHeadshot {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 100px 0 0;
+        padding: 50px 0 0 0;
+        p {
+            width: 33%;
+        }
+        img {
+            width: 30%;
+            opacity: 0.8;
+            border-radius: 5px;
+            // box-shadow: 15px 15px rgba(158, 128, 184, 0.5);
+            &:hover {
+                opacity: 1;
+                box-shadow: 15px 15px rgba(158, 128, 184, 0.5);
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    ul {
+        display: flex;
+    }
+}
+
+h1 {
+    font-family: $headerFont;
+    font-size: 120px;
+    color: black;
+}
