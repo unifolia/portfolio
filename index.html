@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mY pOrTfoLiO</title>
-
     <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <title>James Lewis | Developer</title>
 </head>
 <body>
     <header>
         <div class="headerContent wrapper">
             <nav>
-                <h1>Hello!</h1>
+                <h1>James Lewis</h1>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li class="toFlexbox">Flexbox</li>
+                    <li class="toGrid">Grid</li>
+                    <li class="toFloat">Float</li>
+                    <!-- ^ pls no -->
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="jamesHeadshot">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni error nihil, quaerat perferendis quod culpa a aperiam sint ratione autem exercitationem, suscipit et explicabo. Nobis perferendis itaque sapiente molestias voluptates!</p>
-                <img src="./assets/jamesHeadshot.jpg" alt="">
+            <!-- rename ^ -->
+                <section>
+                    <p>Hello! My name is James and I’m a front-end web developer based in Toronto, Canada. I have an endless love for learning
+                    and am always looking to push myself and grow.<p/>
+                    
+                    <p>My current stack is composed of HTML, CSS, and JavaScript (including React) - I hope to continue mastering those skills
+                    while learning new languages and frameworks as well!</p>
+                    
+                    <p>As a leader, I have used both my business skills and empathetic nature to ensure the happiness and productivity of my
+                    team.</p>
+                    
+                    <p>Let’s connect!</p>
+                </section>
+                <!-- <div class="headshotWrapper"> -->
+                <img src="./assets/jamesHeadshot.jpg" alt="" class="headshot animated zoomInUp">
+                <!-- </div> -->
             </div>
+            <i class="fas fa-angle-double-down cursorPointer animate pulse"></i>
         </div>
     </header>
-    <main>
+    <main class="wrapper">
         <section class="basicInfo">
             <h2>Basic Info</h2>
             <ul class="basicInfo">
@@ -36,7 +53,8 @@
                 <li>Phone Number - 416-577-6406</li>
             </ul>
             <section class="aboutMe">
-                
+                <h3>Blah</h3> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequuntur aut similique! Velit natus adipisci reiciendis ducimus autem explicabo earum, corrupti temporibus consectetur qui tempore sint ipsum, modi eos molestias.</p>     
             </section>
         </section>
         <section class="skills">
@@ -61,10 +79,20 @@
                 <h3>Cash Companion</h3>
             </div>
         </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form action="">
+                <input type="text">
+                <button type="submit">
+                    Submit!
+                </button>
+            </form>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./javascript.js"></script>
 </body>
 </html>

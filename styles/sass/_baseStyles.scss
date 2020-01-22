@@ -4,11 +4,11 @@ $bodyFont: 'Playfair Display', serif;
 $backgroundColor: #FFF5EE;
 
 body {
-    background: linear-gradient(221deg, #fff5ee, #fcf1e5, #f4ecd8);
+    background: linear-gradient(218deg, #ffeeee, #fff6ee, #fcffee, #eefff1, #eefcff, #eeefff, #f8eeff, #ffeef6);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
 }
 
 .wrapper {

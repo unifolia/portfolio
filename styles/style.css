@@ -250,10 +250,10 @@ ul {
 }
 
 body {
-  background: linear-gradient(221deg, #fff5ee, #fcf1e5, #f4ecd8);
+  background: linear-gradient(218deg, #ffeeee, #fff6ee, #fcffee, #eefff1, #eefcff, #eeefff, #f8eeff, #ffeef6);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 5s ease infinite;
-  animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
 }
 
 .wrapper {
@@ -287,10 +287,10 @@ body {
 }
 
 body {
-  background: linear-gradient(221deg, #fff5ee, #fcf1e5, #f4ecd8);
+  background: linear-gradient(218deg, #ffeeee, #fff6ee, #fcffee, #eefff1, #eefcff, #eeefff, #f8eeff, #ffeef6);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 5s ease infinite;
-  animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
 }
 
 .wrapper {
@@ -339,6 +339,23 @@ header {
 .headerContent {
   height: 95%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 40px 50px auto 50px 40px;
+      grid-template-columns: 40px 50px auto 50px 40px;
+  -ms-grid-rows: 30px 25% 100px auto;
+      grid-template-rows: 30px 25% 100px auto;
 }
 
 .headerContent .jamesHeadshot {
@@ -348,12 +365,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 100px 0 0;
-  padding: 50px 0 0 0;
-}
-
-.headerContent .jamesHeadshot p {
-  width: 33%;
+  margin: 0 auto;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .headerContent .jamesHeadshot img {
@@ -368,12 +386,25 @@ header {
           box-shadow: 15px 15px rgba(158, 128, 184, 0.5);
 }
 
+header section {
+  width: 50%;
+}
+
 nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 100px 0;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 nav ul {
@@ -384,15 +415,32 @@ nav ul {
 
 h1 {
   font-family: "PT Sans", sans-serif;
-  font-size: 120px;
+  font-size: 70px;
   color: black;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
+.fa-angle-double-down {
+  margin: auto 0;
+  font-size: 50px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.fa-angle-double-down:hover {
+  color: red;
+}
+
 body {
-  background: linear-gradient(221deg, #fff5ee, #fcf1e5, #f4ecd8);
+  background: linear-gradient(218deg, #ffeeee, #fff6ee, #fcffee, #eefff1, #eefcff, #eeefff, #f8eeff, #ffeef6);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 5s ease infinite;
-  animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
 }
 
 .wrapper {
@@ -481,4 +529,8 @@ h2:hover::after {
 
 .skills ul li .fa-sass:hover::after {
   content: "SASS/SCSS";
+}
+
+.aboutMe p {
+  text-align: right;
 }
