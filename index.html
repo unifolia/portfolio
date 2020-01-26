@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>James Lewis | Developer</title>
@@ -15,15 +16,22 @@
         <div class="headerContent wrapper">
             <nav>
                 <h1>James Lewis</h1>
-                <ul>
-                    <li class="toFlexbox">Flexbox</li>
-                    <li class="toGrid">Grid</li>
-                    <li class="toFloat">Float</li>
-                    <!-- ^ pls no -->
-                    <li><a href="#contact">contact</a></li>
+                <ul class="socialLinks">
+                    <li>
+                        <a href="https://www.linkedin.com/in/james-lewis-aba632160/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/unifolia" title="Github"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/jameslewisdev" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@james_9108"  title="Medium"><i class="fab fa-medium"></i></a>
+                    </li>
                 </ul>
             </nav>
-            <div class="jamesHeadshot">
+            <div class="infoAndPicture">
             <!-- rename ^ -->
                 <section>
                     <p>Hello! My name is James and I’m a front-end web developer based in Toronto, Canada. I have an endless love for learning
@@ -35,64 +43,146 @@
                     <p>As a leader, I have used both my business skills and empathetic nature to ensure the happiness and productivity of my
                     team.</p>
                     
-                    <p>Let’s connect!</p>
+                    <p><a href="#contact">Let's connect!</a></p>
                 </section>
-                <!-- <div class="headshotWrapper"> -->
-                <img src="./assets/jamesHeadshot.jpg" alt="" class="headshot animated zoomInUp">
-                <!-- </div> -->
+                <div class="headshotWrapper">
+                    <img src="./assets/jamesHeadshot.jpg" alt="" class="headshot animated zoomInUp" title="The Konami Code might work here">
+                </div>
             </div>
-            <i class="fas fa-angle-double-down cursorPointer animate pulse"></i>
+            <button class="scrollDownButton">
+                <i class="fas fa-angle-double-down cursorPointer animate pulse"></i>
+            </button>
         </div>
     </header>
     <main class="wrapper">
-        <section class="basicInfo">
-            <h2>Basic Info</h2>
-            <ul class="basicInfo">
-                <li>Name - James Lewis Sotelo</li>
-                <li>Email - james@jameslewis.io</li>
-                <li>Phone Number - 416-577-6406</li>
-            </ul>
-            <section class="aboutMe">
-                <h3>Blah</h3> 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequuntur aut similique! Velit natus adipisci reiciendis ducimus autem explicabo earum, corrupti temporibus consectetur qui tempore sint ipsum, modi eos molestias.</p>     
-            </section>
-        </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-sass"></i></li>
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="fab fa-react"></i></li>
-                <li><i class="fab fa-github"></i></li>
-            </ul>
-        </section>
-        <section class="projects">
+        <section id="projects" class="projectsSection">
             <h2>Projects</h2>
-            <div class="podcastPrioritizer">
-                <h3>Podcast Prioritizer</h3>
+            <div class="projectsContainer">
+                <div class="projectOne animated fadeInLeftBig">
+                    <h3>Paths and Podcasts</h3>
+                    <div class="projectContent">
+                        <div class="projectPicture">
+                            <img src="./assets/pathsAndPodcasts.png" alt="">
+                        </div>
+                        <div class="projectInfo">
+                            <p>Enter your starting location, your final destination, a podcast that you want to listen to, and - HUZZAH! Paths and Podcasts will tell you whether you should walk or bike based on the lengths of your trip and your podcast. Mob programmed with the great group of
+                                <a href="">Russell Bentulan,</a>
+                                <a href="">Alissa Cheng,</a> and
+                                <a href="">Corey Derouin</a>
+                            </p>
+                            <p>Made using <a href="#skills">React, REST APIs, JavaScript, HTML5, SCSS</a></p>
+                            <div class="projectLinks">
+                                <button>
+                                    <a href="https://podcast-prioritizer.github.io/podcast-prioritizer/">Live</a>
+                                </button>
+                                <button>
+                                    <a href="https://github.com/Podcast-Prioritizer/podcast-prioritizer">GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectTwo animated fadeInRightBig">
+                    <h3>Marsometer</h3>
+                    <div class="projectContent">
+                        <div class="projectInfo">
+                            <p>This is an app that allows the user to input a city and compare its current temperature to that of Mars. Uses APIs from NASA InSight, OpenWeatherMap, and Teleport. Done in collaboration with the wonderful and talented 
+                                <a href="http://www.bethancdavies.com/">Bethan Davies.</a>
+                            </p>
+                            <p>Made using <a href="#skills">jQuery, REST APIs, JavaScript, HTML5, SCSS</a></p>
+                            <div class="projectLinks">
+                                <button>
+                                    <a href="https://jameslewis.io/marsometer/">Live</a>
+                                </button>
+                                <button>
+                                    <a href="https://github.com/Marsometer/marsometer">GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projectPicture">
+                            <img src="./assets/marsometer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectThree animated fadeInLeftBig">
+                    <h3>Cash Comrade</h3>
+                    <div class="projectContent">
+                        <div class="projectPicture">
+                            <img src="./assets/cashComrade.png" alt="">
+                        </div>
+                        <div class="projectInfo">
+                            <p>Save some money</p>
+                            <p>Made using <a href="#skills">JavaScript, HTML5, CSS</a></p>
+                            <div class="projectLinks">
+                                <button>
+                                    <a href="https://jameslewis.io/cashcomrade/">Live</a>
+                                </button>
+                                <button>
+                                    <a href="https://github.com/unifolia/cashComrade">GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="Marsometer">
-                <h3>Marsometer</h3>
-            </div>
-            <div class="cashCompanion">
-                <h3>Cash Companion</h3>
-            </div>
+            <!-- <p>details</p> -->
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul class="currentSkills">
+                <li><i class="devicon-html5-plain"></i></li>
+                <li><i class="devicon-css3-plain"></i></li>
+                <li><i class="devicon-sass-original"></i></li>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-jquery-plain"></i></li>
+                <li><i class="devicon-react-original"></i></li>
+                <li><i class="devicon-git-plain"></i></li>
+                <li><i class="devicon-google-plain" title="hehe"></i></li>
+            </ul>
+            <h3>I'd Like To Learn</h3>
+            <ul>
+                <li><i class="devicon-nodejs-plain"></i></li>
+                <li><i class="devicon-python-plain"></i></li>
+                <li><i class="devicon-vuejs-plain"></i></li>
+            </ul>
+        </section>
+        <section class="outsideOfTech">
+            <h2>Outside of Tech</h2>
+            <ul class="jamesCameraRoll">
+                <li><img src="./assets/IMG-9498.png" alt=""></li>
+                <li><img src="./assets/IMG-0760.png" alt=""></li>
+                <li><img src="./assets/IMG-9713.png" alt=""></li>
+            </ul>
+            <p>When I'm not busy typing away, I can usually be found playing guitar, watching basketball, or petting my cat (his name is Rembrandt and he is a rascal). </p>
+            <p>My ultimate goal is to leave the world a better place than I found it.</p>
+            <p>Currently Reading: <a href="https://www.goodreads.com/book/show/28197413-immaterialism">Immaterialism by Graham Harman</a></p>
         </section>
         <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <form action="">
-                <input type="text">
-                <button type="submit">
-                    Submit!
-                </button>
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/mvoklenw" method="POST">
+                <div class="topFormRow">
+                    <label for="enterName" class="visually-hidden">Enter Your Name</label>
+                    <input type="text" name="name" id="enterName" placeholder="Your Name">
+                    <label for="enterEmail" class="visually-hidden">Enter Your Email</label>
+                    <input type="email" name="_replyto" placeholder="Your Email">
+                </div>
+                <label for="enterMessage" class="visually-hidden">Text Area</label>
+                <textarea name="message" id="enterMessage" cols="30" rows="10" placeholder=""></textarea>
+                <label for="submit" class="visually-hidden">Submit Your Message</label>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <!-- <footer>
+        <h4>I Want:</h4>
+        <ul class="changer">
+            <li class="toFlexbox">Flexbox</li>
+            <li class="toGrid">Grid</li>
+            <li class="toFloat">Floats</li>
+        </ul>
+    </footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./javascript.js"></script>
 </body>
 </html>
