@@ -1,33 +1,52 @@
 @import 'baseStyles';
+@import 'mixins';
 
 main section {
-    margin: 0 0 100px 0;
-}
+    margin: 25px 0;
+};
 
 h2  {
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
     font-family: $headerFont;
     font-size: 2rem;
-    text-align: center;
-    position: relative;
     &:hover::after {
         content: '';
         display: inline-block;
         position: absolute;
         bottom: -5px;
-        left: 47.5%;
-        width: 5%;
+        left: 5%;
+        width: 90%;
         border-bottom: 4px solid $accentColor;
-    }
-}
+        border-radius: 35%;
+    };
+    @include width-590 {
+        display: block;
+        text-align: center;
+        margin: 0;
+        transform: none;
+        &:hover::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: -2px;
+            left: 25%;
+            width: 50%;
+            border-bottom: 3px solid $accentColor;
+            border-radius: 35%;
+        };
+    };
+};
 
 h3 {
-    font-family: $headerFont;
+    font-size: 1.3rem;
     text-align: center;
-}
-
-// 
+};
 
 .projectsSection {
+    margin: 25px 0 0 0;
     .projectsContainer {
     width: 90%;
     margin: 0 auto;
@@ -37,48 +56,145 @@ h3 {
             .projectContent {
                 display: flex;
                 justify-content: space-between;
-                margin: 20px 0;
-                .projectInfo {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    p a {
-                        color: red;
-                    }
-                }
+                margin: 10px 0;
             };    
         };
     };
 };
 
+.projectContent {
+    display: flex;
+    padding: 25px 0;
+    img {
+        width: 100%;
+    };
+    .projectInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &,
+        .scrollToSkills {
+            &:hover,
+            & > p:hover {
+                & > a, 
+                & > span span {
+                    z-index: 1;
+                    position: relative;
+                    cursor: pointer;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        width: 100%;
+                        height: 80%;
+                        z-index: -1;
+                        background: $secondAccentColor;
+                        opacity: 0.25;
+                        border-radius: 2px;
+                    };
+                };
+            };
+        };
+    };
+};
+
+
 .projectOne {
     .projectPicture {
         width: 47.5%;
-    }
+    };
     .projectInfo {
         text-align: right;
         width: 42.5%;
-    }
-}
+        p:nth-child(1) {
+            margin: 0 0 20px 0;
+        }
+    };
+    @include width-945 {
+        .projectContent {
+            flex-direction: column;
+            .projectPicture {
+                margin: 0 auto;
+                width: 90%;
+                max-width: 575px;
+            };
+            .projectInfo {
+                margin: 0 auto;
+                text-align: left;
+                width: 90%;
+                p:nth-child(1) {
+                    margin: 20px 0;
+                }
+            };
+            .projectLinks {
+                margin: 20px auto 0 auto;
+            };
+        };
+    };
+};
 
 .projectTwo {
     .projectPicture {
         width: 30%;
-    }
+    };
     .projectInfo {
         width: 65%;
-    }
-}
+    };
+    @include width-855 {
+        .projectContent {
+            flex-direction: column;
+            .projectPicture {
+                margin: 0 auto;
+                width: 40%;
+                max-width: 500px;
+                min-width: 200px;
+                order: 1;
+            };
+            .projectInfo {
+                margin: 0 auto;
+                text-align: left;
+                width: 90%;
+                order: 2;
+            };
+            .projectLinks {
+                margin: 20px auto 0 auto;
+            };
+        };
+    };
+};
 
 .projectThree {
     .projectPicture {
-        width: 20%;
-    }
+        width: 22.5%;
+        flex-shrink: 0;
+    };
     .projectInfo {
         text-align: right;
-        width: 75%;
-    }
-}
+        width: 72.5%;
+        flex-shrink: 2;
+    };
+    @include width-690 {
+        .projectContent {
+            flex-direction: column;
+            .projectPicture {
+                margin: 0 auto;
+                width: 20%;
+                max-width: 150px;
+                min-width: 140px;
+            };
+            .projectInfo {
+                margin: 0 auto;
+                text-align: left;
+                width: 90%;
+            };
+            .projectLinks {
+                margin: 20px auto 0 auto;
+            };
+        };
+    };
+};
 
 .projectLinks {
     margin: 20px 0;
@@ -86,6 +202,7 @@ h3 {
         margin: 0 5px 0 0;
         padding: 0;
         border: none;
+        border-radius: 2px;
         background: rgba($color: #ababab, $alpha: 0.3);
         box-shadow: 3px 5px $accentColor;
         &:hover {
@@ -93,94 +210,111 @@ h3 {
             top: 4px;
             left: 2px;
             box-shadow: 1px 1px $accentColor;
-        }
+        };
         a {
             display: inline-block;
             width: 150px;
             height: 100%;
-        }
-    }
-}
-
-// 
-
-.skills ul {
-    display: flex;
-    justify-content: space-evenly;
-    i {
-        padding: 10px;
-        font-size: 2.5rem;
-        &:hover {
-            color: darken($color: $accentColor, $amount: 25)
-        }
-    }
-    li {
-        position: relative;
-        i:hover::after {
-            font-family: $headerFont;
-            position: absolute;
-            display: inline-block;
-            width: 120%;
-            font-size: 15px;
-            bottom: -40%;
-            left: -10%;
-            text-align: center;
-        }
-        .devicon-html5-plain:hover::after {
-            content: "HTML";
         };
-        .devicon-css3-plain:hover::after {
-            content: "CSS";
+    };
+    @include width-450 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        button {
+            margin: 10px 0;
+            width: 100%;
         };
-        .devicon-sass-original:hover::after {
-            content: "SCSS";
-        }
-        .devicon-javascript-plain:hover::after {
-            content: "JavaScript";
-        }
-        .devicon-jquery-plain:hover::after {
-            content: "jQuery";
-        }
-        .devicon-react-original:hover::after {
-            content: "React";
-        }
-        .devicon-git-plain:hover::after {
-            content: "Git & GitHub";
-        }
-        .devicon-google-plain:hover::after {
-            content: "Google 😜"
-        }
-        .devicon-nodejs-plain:hover::after {
-            content: "node.js";
-        }
-        .devicon-python-plain:hover::after {
-            content: "Python";
-        }
-        .devicon-vuejs-plain:hover::after {
-            content: "Vue"
-        }
+    };
+}; 
+
+.skills {
+    .futureSkills {
+        padding: 40px 0 20px 0;
+    };
+    ul {
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+                i {
+                padding: 10px;
+                font-size: 2.8rem;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.15);
+                };
+            };
+            &:hover {
+                cursor: crosshair;
+                color: darken($color: $secondAccentColor, $amount: 20);
+            };
+        };
     };
 };
 
 .jamesCameraRoll {
-    display: flex;
-    justify-content: space-around;
-    li {
-        width: 25%;
-        // height: auto;
-        img {
-            width: 100%;
-            border-radius: 50%;
-            transition: all 0.3s;
-            &:hover {
-                border-radius: 5px;
-            }
-        }
-    }
-}
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    button {
+        position: absolute;
+        top: 3%;
+        right: 16.5%;
+        z-index: 2;
+        height: 70px;
+        width: 70px;
+        opacity: 0;
+        cursor: pointer;
+        @include width-540 {
+            right: 75px;
+        };
+        @include width-515 {
+            right: 70px;
+        };
+        @include width-480 {
+            top: 0;
+            right: 67px;
+        };
+        @include width-450 {
+            right: 60px;
+        };
+        @include width-430 {
+            right: 55px;
+        };
+        @include width-414 {
+            right: 48px;
+        };
+        @include width-385 {
+            right: 42px;
+        };
+        @include width-370 {
+            display: none;
+        };
+
+    };
+    img {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    };
+};
 
 form {
-    padding: 50px 0;
+    width: 90%;
+    padding: 50px 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     input, 
@@ -189,35 +323,44 @@ form {
         border: none;
         border-bottom: 2px solid $accentColor;
         margin: 10px 0;
+        resize: none;
         &::placeholder {
-            opacity: 0.8;
-            color: black;
-        }
-    }
+            opacity: 0.9;
+            color: $fontColor;
+        };
+        @include width-590 {
+            width: 80%;
+            margin: 15px auto;
+        };
+    };
     .topFormRow {
         display: flex;
         justify-content: space-between;
+        @include width-590 {
+            flex-direction: column;
+            input {
+                input::placeholder {
+                text-align: center;
+                };
+            };
+        };
     };
     button {
         font-size: 1.5rem;
-        padding: 10px;
-        margin: 0 auto;
-        border-bottom: 2px solid black;
+        width: 30%;
+        min-width: 130px;
+        padding: 15px;
+        margin: 15px auto;
+        border: none;
         border-radius: 5px;
-        transition: all 0.5s;
+        background: rgba($color: #ababab, $alpha: 0.3);
+        box-shadow: 4px 6px $accentColor;
         &:hover {
+            position: relative;
+            top: 4px;
+            left: 2px;
             cursor: pointer;
-            transform: scale(1.1); 
+            box-shadow: 2px 2px $accentColor;
         };
     };
 };
-
-.changer {
-    width: 30%;
-    font-family: $headerFont;
-    display: flex;
-    justify-content: space-around;
-    & li:hover {
-        cursor: pointer;
-    }
-}

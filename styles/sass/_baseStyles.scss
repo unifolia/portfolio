@@ -1,8 +1,9 @@
 $headerFont: 'PT Sans', sans-serif;
-$bodyFont: 'Playfair Display', serif;
+$bodyFont: 'Noto Sans JP', sans-serif;
 
 $backgroundColor: #FFF5EE;
-$accentColor: rgba(158, 128, 184, 0.5);
+$accentColor: #9e80b880;
+$secondAccentColor: rgb(106, 167, 189);
 $fontColor: rgb(21, 21, 21);
 
 html {
@@ -12,12 +13,18 @@ html {
 h1,
 h2,
 h3,
-button {
+button,
+li {
     font-family: $headerFont;
 }
 
 p {
     font-family: $bodyFont;
+}
+
+a {
+    text-decoration: none;
+    color: $fontColor;
 }
 
 img {
@@ -26,11 +33,7 @@ img {
 }
 
 body {
-    background: linear-gradient(218deg, #ffeeee, #fff6ee, #fcffee, #eefff1, #eefcff, #eeefff, #f8eeff, #ffeef6);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 60s ease infinite;
-    -moz-animation: AnimationName 60s ease infinite;
-    animation: AnimationName 60s ease infinite;
+    background-color: rgb(234, 255, 233);
     color: $fontColor;
 }
 
@@ -56,21 +59,21 @@ main section {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
-}
+};
 
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:74% 0%}
-    50%{background-position:27% 100%}
-    100%{background-position:74% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:74% 0%}
-    50%{background-position:27% 100%}
-    100%{background-position:74% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:74% 0%}
-    50%{background-position:27% 100%}
-    100%{background-position:74% 0%}
-}
+.lightsOut {
+    background: #151515;
+    & h1,
+    h2,
+    h3,
+    a,
+    p,
+    i,
+    li,
+    .skills ul li:hover,
+    button,
+    input::placeholder,
+    textarea::placeholder {
+        color: rgb(225, 204, 179);
+    };
+};
