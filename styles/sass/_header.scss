@@ -1,16 +1,18 @@
 @import 'baseStyles';
 @import 'mixins';
 
-// header {
-//     min-height: 100vh;
-// };
-
 .headerContent {
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include width-1450 {
+        padding-top: 25px;
+    };
+    @include width-480 {
+        padding-top: 20px;
+    }
 };
 
 nav {
@@ -47,7 +49,7 @@ nav {
             transition: all 0.6s;
         };
         li:hover > a {
-            transform: rotateY(360deg) scale(1.1);
+            transform: rotateY(360deg) scale(1.15);
         };
     };
     @include width-770 {
@@ -59,12 +61,12 @@ nav {
             margin: 0 auto;
             a {
                 font-size: 1.9rem;
-            }
+            };
             @include width-590 {
                 width: 87.5%;
-            }
-        }
-    }
+            };
+        };
+    };
 };
 
 .infoAndPicture {
@@ -89,19 +91,13 @@ nav {
                 position: absolute;
                 top: 2px;
                 left: -25px;
+                @include width-480 {
+                    content: "←";
+                    left: 140px;
+                };
             };
-            &:hover::after {
-            content: "";
-                display: inline-block;
-                position: absolute;
-                left: 6px;
-                top: 6px;
-                width: 100%;
-                height: 80%;
-                z-index: -1;
-                background: $secondAccentColor;
-                opacity: 0.25;
-                border-radius: 2px;
+            &::after {
+                @include afterOverlay;
             };
         };
     };
@@ -124,23 +120,15 @@ nav {
             order: 2;
             width: 85%;
             margin: 0 auto;
-            @include width-480 {
-                a::before {
-                    content: "";
-                }
-            }
-        }
+        };
         .headshotWrapper {
             margin: 0 auto;
             order: 1;
             padding: 25px 0 50px 0;
             min-width: 300px;
             max-width: 100%;
-            // @include width-414 {
-            //     order: 2;
-            // }
-        }
-    }
+        };
+    };
 };
 
 header button {
@@ -156,5 +144,5 @@ header button {
     };
     @include width-590 {
         margin: 20px 0 0 0;
-    }
+    };
 };

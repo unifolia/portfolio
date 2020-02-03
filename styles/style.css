@@ -271,13 +271,27 @@ a {
   color: #151515;
 }
 
+a:focus-within,
+button:focus-within,
+input:focus-within,
+textarea:focus-within {
+  outline: 2px dotted #151515;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active {
+  outline: none;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
 body {
-  background-color: #eaffe9;
+  background-color: #ebfaea;
   color: #151515;
 }
 
@@ -287,7 +301,7 @@ main section {
 
 .wrapper {
   width: 87.5%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -307,68 +321,101 @@ main section {
   /* added line */
 }
 
-.lightsOut {
+.nightTime {
   background: #151515;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-webkit-input-placeholder,
-.lightsOut textarea::-webkit-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-webkit-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-webkit-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input:-ms-input-placeholder,
-.lightsOut textarea:-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input:-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea:-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-ms-input-placeholder,
-.lightsOut textarea::-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::placeholder,
-.lightsOut textarea::placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::placeholder,
+.nightTime textarea,
+.nightTime textarea::placeholder {
   color: #e1ccb3;
+}
+
+.nightTime section a::after,
+.nightTime span span::after,
+.nightTime .projectContent .projectInfo > p:hover > a::after,
+.nightTime .projectContent .projectInfo > p:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
+  background: #b7a1ca;
+}
+
+.nightTime a:focus-within,
+.nightTime button:focus-within,
+.nightTime input:focus-within,
+.nightTime textarea:focus-within {
+  outline: 2px dotted #8dbccd;
+}
+
+.nightTime a:active,
+.nightTime button:active,
+.nightTime input:active,
+.nightTime textarea:active {
+  outline: none;
 }
 
 .headerContent {
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +429,18 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1450px) {
+  .headerContent {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContent {
+    padding-top: 20px;
+  }
 }
 
 nav {
@@ -436,8 +495,8 @@ nav ul a {
 }
 
 nav ul li:hover > a {
-  -webkit-transform: rotateY(360deg) scale(1.1);
-          transform: rotateY(360deg) scale(1.1);
+  -webkit-transform: rotateY(360deg) scale(1.15);
+          transform: rotateY(360deg) scale(1.15);
 }
 
 @media (max-width: 770px) {
@@ -505,7 +564,14 @@ nav ul li:hover > a {
   left: -25px;
 }
 
-.infoAndPicture section a:hover::after {
+@media (max-width: 480px) {
+  .infoAndPicture section a::before {
+    content: "←";
+    left: 140px;
+  }
+}
+
+.infoAndPicture section a::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -549,15 +615,6 @@ nav ul li:hover > a {
     width: 85%;
     margin: 0 auto;
   }
-}
-
-@media (max-width: 817px) and (max-width: 480px) {
-  .infoAndPicture section a::before {
-    content: "";
-  }
-}
-
-@media (max-width: 817px) {
   .infoAndPicture .headshotWrapper {
     margin: 0 auto;
     -webkit-box-ordinal-group: 2;
@@ -613,13 +670,27 @@ a {
   color: #151515;
 }
 
+a:focus-within,
+button:focus-within,
+input:focus-within,
+textarea:focus-within {
+  outline: 2px dotted #151515;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active {
+  outline: none;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
 body {
-  background-color: #eaffe9;
+  background-color: #ebfaea;
   color: #151515;
 }
 
@@ -629,7 +700,7 @@ main section {
 
 .wrapper {
   width: 87.5%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -649,64 +720,97 @@ main section {
   /* added line */
 }
 
-.lightsOut {
+.nightTime {
   background: #151515;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-webkit-input-placeholder,
-.lightsOut textarea::-webkit-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-webkit-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-webkit-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input:-ms-input-placeholder,
-.lightsOut textarea:-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input:-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea:-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-ms-input-placeholder,
-.lightsOut textarea::-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::placeholder,
-.lightsOut textarea::placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::placeholder,
+.nightTime textarea,
+.nightTime textarea::placeholder {
   color: #e1ccb3;
+}
+
+.nightTime section a::after,
+.nightTime span span::after,
+.nightTime .projectContent .projectInfo > p:hover > a::after,
+.nightTime .projectContent .projectInfo > p:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
+  background: #b7a1ca;
+}
+
+.nightTime a:focus-within,
+.nightTime button:focus-within,
+.nightTime input:focus-within,
+.nightTime textarea:focus-within {
+  outline: 2px dotted #8dbccd;
+}
+
+.nightTime a:active,
+.nightTime button:active,
+.nightTime input:active,
+.nightTime textarea:active {
+  outline: none;
 }
 
 main section {
@@ -806,6 +910,10 @@ h3 {
       justify-content: space-around;
 }
 
+.projectContent .projectInfo .scrollToSkills:hover {
+  cursor: pointer;
+}
+
 .projectContent .projectInfo:hover > a,
 .projectContent .projectInfo:hover > span span,
 .projectContent .projectInfo > p:hover > a,
@@ -830,8 +938,8 @@ h3 {
   content: "";
   display: inline-block;
   position: absolute;
-  left: 5px;
-  top: 5px;
+  left: 6px;
+  top: 6px;
   width: 100%;
   height: 80%;
   z-index: -1;
@@ -1114,7 +1222,13 @@ h3 {
 
 @media (max-width: 370px) {
   .jamesCameraRoll button {
-    display: none;
+    right: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .jamesCameraRoll button {
+    right: 25px;
   }
 }
 
@@ -1139,6 +1253,7 @@ form {
 
 form input,
 form textarea {
+  padding: 5px 5px 5px 10px;
   background: none;
   border: none;
   border-bottom: 2px solid #9e80b880;
@@ -1173,9 +1288,15 @@ form textarea::placeholder {
 @media (max-width: 590px) {
   form input,
   form textarea {
-    width: 80%;
+    width: 95%;
     margin: 15px auto;
   }
+}
+
+form textarea {
+  border: 2px solid #9e80b880;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 form .topFormRow {
@@ -1230,6 +1351,35 @@ form button:hover {
           box-shadow: 2px 2px #9e80b880;
 }
 
+form p {
+  text-align: center;
+}
+
+form p a {
+  position: relative;
+  z-index: 1;
+}
+
+form p a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  background: #6aa7bd;
+  opacity: 0.25;
+  border-radius: 2px;
+}
+
+@media (max-width: 590px) {
+  form {
+    width: 95%;
+  }
+}
+
 html {
   font-size: 125%;
 }
@@ -1251,13 +1401,27 @@ a {
   color: #151515;
 }
 
+a:focus-within,
+button:focus-within,
+input:focus-within,
+textarea:focus-within {
+  outline: 2px dotted #151515;
+}
+
+a:active,
+button:active,
+input:active,
+textarea:active {
+  outline: none;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
 body {
-  background-color: #eaffe9;
+  background-color: #ebfaea;
   color: #151515;
 }
 
@@ -1267,7 +1431,7 @@ main section {
 
 .wrapper {
   width: 87.5%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1287,67 +1451,99 @@ main section {
   /* added line */
 }
 
-.lightsOut {
+.nightTime {
   background: #151515;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-webkit-input-placeholder,
-.lightsOut textarea::-webkit-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-webkit-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-webkit-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input:-ms-input-placeholder,
-.lightsOut textarea:-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input:-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea:-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::-ms-input-placeholder,
-.lightsOut textarea::-ms-input-placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-ms-input-placeholder {
   color: #e1ccb3;
 }
 
-.lightsOut h1,
-.lightsOut h2,
-.lightsOut h3,
-.lightsOut a,
-.lightsOut p,
-.lightsOut i,
-.lightsOut li,
-.lightsOut .skills ul li:hover,
-.lightsOut button,
-.lightsOut input::placeholder,
-.lightsOut textarea::placeholder {
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::placeholder,
+.nightTime textarea,
+.nightTime textarea::placeholder {
   color: #e1ccb3;
+}
+
+.nightTime section a::after,
+.nightTime span span::after,
+.nightTime .projectContent .projectInfo > p:hover > a::after,
+.nightTime .projectContent .projectInfo > p:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
+.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
+  background: #b7a1ca;
+}
+
+.nightTime a:focus-within,
+.nightTime button:focus-within,
+.nightTime input:focus-within,
+.nightTime textarea:focus-within {
+  outline: 2px dotted #8dbccd;
+}
+
+.nightTime a:active,
+.nightTime button:active,
+.nightTime input:active,
+.nightTime textarea:active {
+  outline: none;
 }
 
 footer p {
-  font-family: "PT Sans", sans-serif;
   text-align: center;
 }

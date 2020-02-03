@@ -1,14 +1,17 @@
+@import 'mixins';
+
 $headerFont: 'PT Sans', sans-serif;
 $bodyFont: 'Noto Sans JP', sans-serif;
 
-$backgroundColor: #FFF5EE;
+$backgroundColor: #ebfaea;
 $accentColor: #9e80b880;
-$secondAccentColor: rgb(106, 167, 189);
-$fontColor: rgb(21, 21, 21);
+$secondAccentColor: #6aa7bd;
+$fontColor: #151515;
+$nightFontColor: #e1ccb3;
 
 html {
     font-size: 125%;
-}
+};
 
 h1,
 h2,
@@ -16,40 +19,53 @@ h3,
 button,
 li {
     font-family: $headerFont;
-}
+};
 
 p {
     font-family: $bodyFont;
-}
+};
 
 a {
     text-decoration: none;
     color: $fontColor;
-}
+};
+
+a,
+button,
+input,
+textarea {
+    &:focus-within {
+        outline: 2px dotted $fontColor;
+    };
+    &:active {
+        outline: none;
+    }
+};
 
 img {
     width: 100%;
     height: auto;
-}
+};
 
 body {
-    background-color: rgb(234, 255, 233);
+    background-color: $backgroundColor;
     color: $fontColor;
-}
+};
+
 
 main section {
     padding: 25px 0;
-}
+};
 
 .wrapper {
     width: 87.5%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
-}
+};
 
 .cursorPointer {
     cursor: pointer;
-}
+};
 
 .visually-hidden { 
     position: absolute !important;
@@ -61,8 +77,8 @@ main section {
     white-space: nowrap; /* added line */
 };
 
-.lightsOut {
-    background: #151515;
+.nightTime {
+    background: $fontColor;
     & h1,
     h2,
     h3,
@@ -72,8 +88,31 @@ main section {
     li,
     .skills ul li:hover,
     button,
+    input,
     input::placeholder,
+    textarea,
     textarea::placeholder {
-        color: rgb(225, 204, 179);
+        color: $nightFontColor;
     };
+    section a::after,
+    span span::after,
+    .projectContent .projectInfo > p:hover > a::after,
+    .projectContent .projectInfo > p:hover > span span::after,
+    .projectContent .projectInfo .scrollToSkills:hover > a::after,
+    .projectContent .projectInfo .scrollToSkills:hover > span span::after,
+    .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
+    .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
+        background: lighten($color: #9e80b8, $amount: 10);
+    };
+    a,
+    button,
+    input,
+    textarea {
+    &:focus-within {
+        outline: 2px dotted lighten($color: $secondAccentColor, $amount: 10);
+    };
+    &:active {
+        outline: none;
+    }
+};
 };

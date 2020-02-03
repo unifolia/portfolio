@@ -1,3 +1,23 @@
+@mixin afterOverlay {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  background: $secondAccentColor;
+  opacity: 0.25;
+  border-radius: 2px;
+}
+
+@mixin width-1450 {
+  @media (max-width: 1450px) {
+    @content
+  };
+};
+
 @mixin width-945 {
   @media (max-width: 945px) {
     @content
@@ -90,6 +110,12 @@
 
 @mixin width-370 {
   @media (max-width: 370px) {
+    @content
+  };
+};
+
+@mixin width-320 {
+  @media (max-width: 320px) {
     @content
   };
 };
