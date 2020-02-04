@@ -23,7 +23,8 @@ li {
     font-family: $headerFont;
 };
 
-p {
+p,
+a {
     font-family: $bodyFont;
 };
 
@@ -66,7 +67,7 @@ main section {
     cursor: pointer;
 };
 
-.visuallyHidden { 
+.visuallyHidden:not(:focus):not(:active) { 
     position: absolute !important;
     height: 1px; 
     width: 1px;
@@ -111,9 +112,6 @@ main section {
     textarea {
     &:focus-within {
         outline: 2px dotted lighten($color: $secondAccentColor, $amount: 10);
+        };
     };
-    &:active {
-        outline: none;
-    }
-};
 };

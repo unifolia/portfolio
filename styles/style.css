@@ -262,7 +262,8 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -302,7 +303,7 @@ main section {
   cursor: pointer;
 }
 
-.visuallyHidden {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -404,13 +405,6 @@ main section {
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
   outline: 2px dotted #8dbccd;
-}
-
-.nightTime a:active,
-.nightTime button:active,
-.nightTime input:active,
-.nightTime textarea:active {
-  outline: none;
 }
 
 .headerContent {
@@ -666,7 +660,8 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -706,7 +701,7 @@ main section {
   cursor: pointer;
 }
 
-.visuallyHidden {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -808,13 +803,6 @@ main section {
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
   outline: 2px dotted #8dbccd;
-}
-
-.nightTime a:active,
-.nightTime button:active,
-.nightTime input:active,
-.nightTime textarea:active {
-  outline: none;
 }
 
 main section {
@@ -1367,7 +1355,8 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -1407,7 +1396,7 @@ main section {
   cursor: pointer;
 }
 
-.visuallyHidden {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -1509,13 +1498,6 @@ main section {
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
   outline: 2px dotted #8dbccd;
-}
-
-.nightTime a:active,
-.nightTime button:active,
-.nightTime input:active,
-.nightTime textarea:active {
-  outline: none;
 }
 
 footer p {
