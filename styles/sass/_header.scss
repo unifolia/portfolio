@@ -99,6 +99,10 @@ nav {
             &::after {
                 @include afterOverlay;
             };
+            &:hover::after,
+            &:focus-within::after {
+                opacity: 0.4;
+            }
         };
     };
     .headshotWrapper {

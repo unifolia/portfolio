@@ -278,13 +278,6 @@ textarea:focus-within {
   outline: 2px dotted #151515;
 }
 
-a:active,
-button:active,
-input:active,
-textarea:active {
-  outline: none;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -309,7 +302,7 @@ main section {
   cursor: pointer;
 }
 
-.visually-hidden {
+.visuallyHidden {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -338,7 +331,7 @@ main section {
 .nightTime input::-webkit-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-webkit-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -354,7 +347,7 @@ main section {
 .nightTime input:-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea:-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -370,7 +363,7 @@ main section {
 .nightTime input::-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -386,18 +379,24 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime section a::after,
 .nightTime span span::after,
-.nightTime .projectContent .projectInfo > p:hover > a::after,
-.nightTime .projectContent .projectInfo > p:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
-  background: #b7a1ca;
+.nightTime .projectInfo p:hover > a::after,
+.nightTime .projectInfo p:hover > span span::after {
+  background: #855fa6;
+}
+
+.nightTime section a:hover:after, .nightTime section a:focus-within::after,
+.nightTime span span:hover:after,
+.nightTime span span:focus-within::after,
+.nightTime .projectInfo p:hover > a:hover:after,
+.nightTime .projectInfo p:hover > a:focus-within::after,
+.nightTime .projectInfo p:hover > span span:hover:after,
+.nightTime .projectInfo p:hover > span span:focus-within::after {
+  opacity: 0.4;
 }
 
 .nightTime a:focus-within,
@@ -578,11 +577,17 @@ nav ul li:hover > a {
   left: 6px;
   top: 6px;
   width: 100%;
-  height: 80%;
+  height: 73%;
   z-index: -1;
   background: #6aa7bd;
   opacity: 0.25;
   border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.infoAndPicture section a:hover::after, .infoAndPicture section a:focus-within::after {
+  opacity: 0.4;
 }
 
 .infoAndPicture .headshotWrapper {
@@ -677,13 +682,6 @@ textarea:focus-within {
   outline: 2px dotted #151515;
 }
 
-a:active,
-button:active,
-input:active,
-textarea:active {
-  outline: none;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -708,7 +706,7 @@ main section {
   cursor: pointer;
 }
 
-.visually-hidden {
+.visuallyHidden {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -737,7 +735,7 @@ main section {
 .nightTime input::-webkit-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-webkit-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -753,7 +751,7 @@ main section {
 .nightTime input:-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea:-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -769,7 +767,7 @@ main section {
 .nightTime input::-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -785,18 +783,24 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime section a::after,
 .nightTime span span::after,
-.nightTime .projectContent .projectInfo > p:hover > a::after,
-.nightTime .projectContent .projectInfo > p:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
-  background: #b7a1ca;
+.nightTime .projectInfo p:hover > a::after,
+.nightTime .projectInfo p:hover > span span::after {
+  background: #855fa6;
+}
+
+.nightTime section a:hover:after, .nightTime section a:focus-within::after,
+.nightTime span span:hover:after,
+.nightTime span span:focus-within::after,
+.nightTime .projectInfo p:hover > a:hover:after,
+.nightTime .projectInfo p:hover > a:focus-within::after,
+.nightTime .projectInfo p:hover > span span:hover:after,
+.nightTime .projectInfo p:hover > span span:focus-within::after {
+  opacity: 0.4;
 }
 
 .nightTime a:focus-within,
@@ -941,11 +945,31 @@ h3 {
   left: 6px;
   top: 6px;
   width: 100%;
-  height: 80%;
+  height: 73%;
   z-index: -1;
   background: #6aa7bd;
   opacity: 0.25;
   border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.projectContent .projectInfo:hover > a:hover::after, .projectContent .projectInfo:hover > a:focus-within::after,
+.projectContent .projectInfo:hover > span span:hover::after,
+.projectContent .projectInfo:hover > span span:focus-within::after,
+.projectContent .projectInfo > p:hover > a:hover::after,
+.projectContent .projectInfo > p:hover > a:focus-within::after,
+.projectContent .projectInfo > p:hover > span span:hover::after,
+.projectContent .projectInfo > p:hover > span span:focus-within::after,
+.projectContent .projectInfo .scrollToSkills:hover > a:hover::after,
+.projectContent .projectInfo .scrollToSkills:hover > a:focus-within::after,
+.projectContent .projectInfo .scrollToSkills:hover > span span:hover::after,
+.projectContent .projectInfo .scrollToSkills:hover > span span:focus-within::after,
+.projectContent .projectInfo .scrollToSkills > p:hover > a:hover::after,
+.projectContent .projectInfo .scrollToSkills > p:hover > a:focus-within::after,
+.projectContent .projectInfo .scrollToSkills > p:hover > span span:hover::after,
+.projectContent .projectInfo .scrollToSkills > p:hover > span span:focus-within::after {
+  opacity: 0.4;
 }
 
 .projectOne .projectPicture {
@@ -1168,68 +1192,13 @@ h3 {
 
 .jamesCameraRoll button {
   position: absolute;
-  top: 3%;
-  right: 16.5%;
+  top: 2.7%;
+  right: 15.1%;
   z-index: 2;
-  height: 70px;
-  width: 70px;
+  height: 22.9%;
+  width: 16.3%;
   opacity: 0;
   cursor: pointer;
-}
-
-@media (max-width: 540px) {
-  .jamesCameraRoll button {
-    right: 75px;
-  }
-}
-
-@media (max-width: 515px) {
-  .jamesCameraRoll button {
-    right: 70px;
-  }
-}
-
-@media (max-width: 480px) {
-  .jamesCameraRoll button {
-    top: 0;
-    right: 67px;
-  }
-}
-
-@media (max-width: 450px) {
-  .jamesCameraRoll button {
-    right: 60px;
-  }
-}
-
-@media (max-width: 430px) {
-  .jamesCameraRoll button {
-    right: 55px;
-  }
-}
-
-@media (max-width: 414px) {
-  .jamesCameraRoll button {
-    right: 48px;
-  }
-}
-
-@media (max-width: 385px) {
-  .jamesCameraRoll button {
-    right: 42px;
-  }
-}
-
-@media (max-width: 370px) {
-  .jamesCameraRoll button {
-    right: 40px;
-  }
-}
-
-@media (max-width: 320px) {
-  .jamesCameraRoll button {
-    right: 25px;
-  }
 }
 
 .jamesCameraRoll img {
@@ -1342,7 +1311,7 @@ form button {
           box-shadow: 4px 6px #9e80b880;
 }
 
-form button:hover {
+form button:hover, form button:focus-within {
   position: relative;
   top: 4px;
   left: 2px;
@@ -1367,11 +1336,17 @@ form p a::after {
   left: 6px;
   top: 6px;
   width: 100%;
-  height: 80%;
+  height: 73%;
   z-index: -1;
   background: #6aa7bd;
   opacity: 0.25;
   border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+form p a:hover::after, form p a:focus-within::after {
+  opacity: 0.4;
 }
 
 @media (max-width: 590px) {
@@ -1408,13 +1383,6 @@ textarea:focus-within {
   outline: 2px dotted #151515;
 }
 
-a:active,
-button:active,
-input:active,
-textarea:active {
-  outline: none;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -1439,7 +1407,7 @@ main section {
   cursor: pointer;
 }
 
-.visually-hidden {
+.visuallyHidden {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -1468,7 +1436,7 @@ main section {
 .nightTime input::-webkit-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-webkit-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -1484,7 +1452,7 @@ main section {
 .nightTime input:-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea:-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -1500,7 +1468,7 @@ main section {
 .nightTime input::-ms-input-placeholder,
 .nightTime textarea,
 .nightTime textarea::-ms-input-placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime h1,
@@ -1516,18 +1484,24 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e1ccb3;
+  color: #e9d8c4;
 }
 
 .nightTime section a::after,
 .nightTime span span::after,
-.nightTime .projectContent .projectInfo > p:hover > a::after,
-.nightTime .projectContent .projectInfo > p:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills:hover > span span::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
-.nightTime .projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
-  background: #b7a1ca;
+.nightTime .projectInfo p:hover > a::after,
+.nightTime .projectInfo p:hover > span span::after {
+  background: #855fa6;
+}
+
+.nightTime section a:hover:after, .nightTime section a:focus-within::after,
+.nightTime span span:hover:after,
+.nightTime span span:focus-within::after,
+.nightTime .projectInfo p:hover > a:hover:after,
+.nightTime .projectInfo p:hover > a:focus-within::after,
+.nightTime .projectInfo p:hover > span span:hover:after,
+.nightTime .projectInfo p:hover > span span:focus-within::after {
+  opacity: 0.4;
 }
 
 .nightTime a:focus-within,

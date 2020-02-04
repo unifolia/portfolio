@@ -87,6 +87,10 @@ h3 {
                     &::after {
                         @include afterOverlay;
                     };
+                    &:hover::after,
+                    &:focus-within::after {
+                        opacity: 0.4;
+                    }
                 };
             };
         };
@@ -263,42 +267,13 @@ h3 {
     position: relative;
     button {
         position: absolute;
-        top: 3%;
-        right: 16.5%;
+        top: 2.7%;
+        right: 15.1%;
         z-index: 2;
-        height: 70px;
-        width: 70px;
+        height: 22.9%;
+        width: 16.3%;
         opacity: 0;
         cursor: pointer;
-        @include width-540 {
-            right: 75px;
-        };
-        @include width-515 {
-            right: 70px;
-        };
-        @include width-480 {
-            top: 0;
-            right: 67px;
-        };
-        @include width-450 {
-            right: 60px;
-        };
-        @include width-430 {
-            right: 55px;
-        };
-        @include width-414 {
-            right: 48px;
-        };
-        @include width-385 {
-            right: 42px;
-        };
-        @include width-370 {
-            right: 40px;
-        };
-        @include width-320 {
-            right: 25px;
-        }
-
     };
     img {
         width: 100%;
@@ -357,7 +332,8 @@ form {
         border-radius: 5px;
         background: rgba($color: #ababab, $alpha: 0.3);
         box-shadow: 4px 6px $accentColor;
-        &:hover {
+        &:hover,
+        &:focus-within {
             position: relative;
             top: 4px;
             left: 2px;
@@ -372,6 +348,10 @@ form {
             z-index: 1;
             &::after {
                 @include afterOverlay;
+            }
+            &:hover::after,
+            &:focus-within::after {
+                opacity: 0.4;
             }
         }
     }

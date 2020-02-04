@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-site-verification" content="1S0opP4YTRJU7JOoqZ4FF0YJYgFYFaqbdVvJNT0qowM"/>
+
+    <meta name=description content="James Lewis is a Toronto-based front end web developer who works with HTML, CSS, and JavaScript">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="James Lewis" />
+    <meta name="twitter:description" content="James Lewis, a web developer from Toronto" />
+    <meta name="twitter:creator" content="@jameslewisdev" />
+    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1191575633614258176/RmW8rQ_G_400x400.jpg"/>
+
     <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
@@ -15,6 +22,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+
     <title>James Lewis | Web Developer</title>
 </head>
 <body>
@@ -39,7 +47,7 @@
             </nav>
             <div class="infoAndPicture">
                 <section>
-                    <p>Hello! My name is James and I’m a front end web developer based in Toronto, Canada. I have an endless love for learning and I am always looking to push myself and grow. My ultimate goal is to make beautiful, fun, and accessible websites.</p>
+                    <p> Hello! My name is James and I’m a front end web developer based in Toronto, Canada. I have an endless love for learning and I am always looking to push myself and grow. My ultimate goal is to make beautiful, fun, and accessible websites.</p>
 
                     <p>My current stack is composed of HTML, CSS, and JavaScript (including React) - I hope to continue mastering those skills while learning new languages, libraries, and frameworks as well!</p>
                     
@@ -51,7 +59,8 @@
                     <img src="./assets/jamesHeadshot.jpg" alt="A photo of James in front of a bright yellow backdrop" class="headshot animated zoomInUp" title="The Konami Code might work here">
                 </div>
             </div>
-            <button class="scrollToProjects">
+            <label for="scrolltoProjects" class="visuallyHidden">Scroll Down To Projects</label>
+            <button class="scrollToProjects" id="scrollToProjects" aria-label="Scroll Down To Projects">
                 <i class="fas fa-angle-double-down cursorPointer animate pulse"></i>
             </button>
         </div>
@@ -64,7 +73,7 @@
                     <h3>Paths and Podcasts</h3>
                     <div class="projectContent">
                         <div class="projectPicture">
-                            <img src="./assets/pathsAndPodcasts.png" alt="">
+                            <img src="./assets/pathsAndPodcasts.png" alt="A photo of the app 'Paths and Podcasts' on a laptop">
                         </div>
                         <div class="projectInfo">
                             <p>Paths and Podcasts allows the user to select a starting location, a destination, and a podcast... and tells them how to travel based on the length of the episode. This wacky app was mob programmed with the great group of
@@ -73,7 +82,7 @@
                                 <a href="https://www.coreyderouin.com/">Corey Derouin.</a>
                             </p>
                             <p>
-                                <span class="scrollToSkills">
+                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
                                     Made using 
                                     <span>React,</span> 
                                     <span>REST APIs,</span> <span>JavaScript,</span> 
@@ -82,10 +91,10 @@
                                 </span>
                             </p>
                             <div class="projectLinks">
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://podcast-prioritizer.github.io/podcast-prioritizer/">Live</a>
                                 </button>
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://github.com/Podcast-Prioritizer/podcast-prioritizer">GitHub</a>
                                 </button>
                             </div>
@@ -100,7 +109,8 @@
                                 <a href="http://www.bethancdavies.com/">Bethan Davies.</a>
                             </p>
                             <p>
-                                <span class="scrollToSkills">
+                                <span class="scrollToSkills"
+                                aria-label="Scroll Down to Skills">
                                     Made using 
                                     <span>jQuery,</span> 
                                     <span>REST APIs,</span> <span>JavaScript,</span> 
@@ -109,16 +119,16 @@
                                 </span>
                             </p>
                             <div class="projectLinks">
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://jameslewis.io/marsometer/">Live</a>
                                 </button>
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://github.com/Marsometer/marsometer">GitHub</a>
                                 </button>
                             </div>
                         </div>
                         <div class="projectPicture">
-                            <img src="./assets/marsometer.png" alt="">
+                            <img src="./assets/marsometer.png" alt="A photo of the app 'Marsometer' on a tablet">
                         </div>
                     </div>
                 </div>
@@ -126,12 +136,13 @@
                     <h3>Cash Comrade</h3>
                     <div class="projectContent">
                         <div class="projectPicture">
-                            <img src="./assets/cashComrade.png" alt="">
+                            <img src="./assets/cashComrade.png" alt="A photo of the app 'Cash Comrade' on a mobile phone">
                         </div>
                         <div class="projectInfo">
                             <p>Cash Comrade is a dynamic app that helps the user keep track of the money they want to save. One can enter the amount they want to reach, add or subtract money, and even estimate the time that it'll take to reach that goal.</p>
                             <p>
-                                <span class="scrollToSkills">
+                                <span class="scrollToSkills"
+                                aria-label="Scroll Down to Skills">
                                     Made using 
                                     <span>JavaScript,</span> 
                                     <span>HTML5,</span>
@@ -139,10 +150,10 @@
                                 </span>
                             </p>
                             <div class="projectLinks">
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://jameslewis.io/cashcomrade/">Live</a>
                                 </button>
-                                <button>
+                                <button tabindex="-1">
                                     <a href="https://github.com/unifolia/cashComrade">GitHub</a>
                                 </button>
                             </div>
@@ -173,7 +184,7 @@
             <h2>Outside of Tech</h2>
             <div class="jamesCameraRoll">
                 <button class="checkbox" aria-hidden="true"></button>
-                <img src="./assets/jamesCouch.png" alt="">
+                <img src="./assets/jamesCouch.png" alt="A cartoon of a man on a couch listening to music. There is a cat sleeping next to him.">
             </div>
             <p>When I'm not busy typing away, I can usually be found reading (I love a good novel or philosophy book), writing music, or hanging out with my cat Rembrandt.</p>
             <p>I'm deeply passionate about inclusivity and social justice, and I hope that I can make a positive impact on the world (whatever that may be).</p>
@@ -183,15 +194,15 @@
             <h2>Get in Touch</h2>
             <form action="https://formspree.io/mvoklenw" method="POST">
                 <div class="topFormRow">
-                    <label for="enterName" class="visually-hidden">Enter Your Name</label>
+                    <label for="enterName" class="visuallyHidden">Enter Your Name</label>
                     <input type="text" name="name" id="enterName" placeholder="Your Name">
-                    <label for="enterEmail" class="visually-hidden">Enter Your Email</label>
-                    <input type="email" name="_replyto" placeholder="Your Email">
+                    <label for="enterEmail" class="visuallyHidden">Enter Your Email</label>
+                    <input type="email" name="_replyto" id="enterEmail" placeholder="Your Email">
                 </div>
-                <label for="enterMessage" class="visually-hidden">Text Area</label>
+                <label for="enterMessage" class="visuallyHidden">Text Area</label>
                 <textarea name="message" id="enterMessage" cols="30" rows="10" placeholder=""></textarea>
-                <label for="submit" class="visually-hidden">Submit Your Message</label>
-                <button type="submit">Submit</button>
+                <label for="submitMessage" class="visuallyHidden">Submit Your Message</label>
+                <button type="submit" id="submitMessage">Submit</button>
                 <p>Or email me 
                     <a href="mailto:james@jameslewis.io?Subject=Hello%20James" target="_top" title="at james@jameslewis.io">directly</a>
                 </p>
