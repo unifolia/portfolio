@@ -97,8 +97,8 @@
     }
 };
 
-@mixin width-414 {
-  @media (max-width: 414px) {
+@mixin width-416 {
+  @media (max-width: 416px) {
     @content
   };
 };

@@ -1,6 +1,10 @@
 @import 'baseStyles';
 @import 'mixins';
 
+a.visuallyHidden {
+    font-family: $bodyFont;
+}
+
 .headerContent {
     padding: 40px 0 20px 0;
     display: flex;
@@ -67,6 +71,11 @@ nav {
             };
         };
     };
+    @include width-416 {
+        h1 span {
+            display: block;
+        }
+    }
 };
 
 .infoAndPicture {

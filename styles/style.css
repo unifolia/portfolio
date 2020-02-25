@@ -262,8 +262,7 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p,
-a {
+p {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -407,6 +406,10 @@ main section {
   outline: 2px dotted #8dbccd;
 }
 
+a.visuallyHidden {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .headerContent {
   padding: 40px 0 20px 0;
   display: -webkit-box;
@@ -513,6 +516,12 @@ nav ul li:hover > a {
 @media (max-width: 770px) and (max-width: 590px) {
   nav ul {
     width: 87.5%;
+  }
+}
+
+@media (max-width: 416px) {
+  nav h1 span {
+    display: block;
   }
 }
 
@@ -660,8 +669,7 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p,
-a {
+p {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -1157,8 +1165,6 @@ h3 {
 .skills ul li i {
   padding: 10px;
   font-size: 2.8rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .skills ul li i:hover {
@@ -1355,8 +1361,7 @@ li {
   font-family: "PT Sans", sans-serif;
 }
 
-p,
-a {
+p {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -1502,4 +1507,188 @@ main section {
 
 footer p {
   text-align: center;
+}
+
+html {
+  font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+button,
+li {
+  font-family: "PT Sans", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #151515;
+}
+
+a:focus-within,
+button:focus-within,
+input:focus-within,
+textarea:focus-within {
+  outline: 2px dotted #151515;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #ebfaea;
+  color: #151515;
+}
+
+main section {
+  padding: 25px 0;
+}
+
+.wrapper {
+  width: 87.5%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
+.nightTime {
+  background: #151515;
+}
+
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-webkit-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-webkit-input-placeholder {
+  color: #e9d8c4;
+}
+
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input:-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea:-ms-input-placeholder {
+  color: #e9d8c4;
+}
+
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::-ms-input-placeholder,
+.nightTime textarea,
+.nightTime textarea::-ms-input-placeholder {
+  color: #e9d8c4;
+}
+
+.nightTime h1,
+.nightTime h2,
+.nightTime h3,
+.nightTime a,
+.nightTime p,
+.nightTime i,
+.nightTime li,
+.nightTime .skills ul li:hover,
+.nightTime button,
+.nightTime input,
+.nightTime input::placeholder,
+.nightTime textarea,
+.nightTime textarea::placeholder {
+  color: #e9d8c4;
+}
+
+.nightTime section a::after,
+.nightTime span span::after,
+.nightTime .projectInfo p:hover > a::after,
+.nightTime .projectInfo p:hover > span span::after {
+  background: #855fa6;
+}
+
+.nightTime section a:hover:after, .nightTime section a:focus-within::after,
+.nightTime span span:hover:after,
+.nightTime span span:focus-within::after,
+.nightTime .projectInfo p:hover > a:hover:after,
+.nightTime .projectInfo p:hover > a:focus-within::after,
+.nightTime .projectInfo p:hover > span span:hover:after,
+.nightTime .projectInfo p:hover > span span:focus-within::after {
+  opacity: 0.4;
+}
+
+.nightTime a:focus-within,
+.nightTime button:focus-within,
+.nightTime input:focus-within,
+.nightTime textarea:focus-within {
+  outline: 2px dotted #8dbccd;
+}
+
+.error404 {
+  height: 90vh;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error404 a {
+  border-bottom: 2px solid #9e80b880;
+}
+
+.error404 a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

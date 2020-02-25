@@ -11,12 +11,13 @@
     <meta name="twitter:description" content="James Lewis, a web developer from Toronto" />
     <meta name="twitter:creator" content="@jameslewisdev" />
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1191575633614258176/RmW8rQ_G_400x400.jpg"/>
+    <meta name="theme-color" content="#ebfaea">
 
     <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./assets/favicons/site.webmanifest">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -28,7 +29,7 @@
 <body>
     <header>
         <div class="headerContent wrapper">
-            <a href="#main" class="visuallyHidden">Skip to Main Content</a>
+            <a href="#projects" class="visuallyHidden">Skip to Projects</a>
             <nav>
                 <h1>James Lewis</h1>
                 <ul class="socialLinks">
@@ -57,7 +58,7 @@
                     </p>
                 </section>
                 <div class="headshotWrapper">
-                    <img src="./assets/jamesHeadshot.jpg" alt="A photo of James in front of a bright yellow backdrop" class="headshot animated zoomInUp" title="The Konami Code might work here">
+                    <img src="./assets/jamesHeadshot.jpg" alt="A photo of James in front of a bright yellow backdrop" class="headshot animated zoomInUp cursorPointer" title="Click me!">
                 </div>
             </div>
             <label for="scrolltoProjects" class="visuallyHidden">Scroll Down To Projects</label>
@@ -66,7 +67,7 @@
             </button>
         </div>
     </header>
-    <main class="wrapper" id="main">
+    <main class="wrapper">
         <section id="projects" class="projectsSection">
             <h2>Projects</h2>
             <div class="projectsContainer">
@@ -96,25 +97,58 @@
                                     <a href="https://podcast-prioritizer.github.io/podcast-prioritizer/">Live</a>
                                 </button>
                                 <button tabindex="-1">
-                                    <a href="https://github.com/Podcast-Prioritizer/podcast-prioritizer">Gitub</a>
+                                    <a href="https://github.com/Podcast-Prioritizer/podcast-prioritizer">GitHub</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="projectTwo" data-aos="fade-left">
-                    <h3>Marsometer</h3>
+                    <h3>Pac-Rem</h3>
                     <div class="projectContent">
                         <div class="projectInfo">
-                            <p>This is an app that allows the user to input a city and compare its current temperature to that of Mars. It uses APIs from NASA InSight, OpenWeatherMap, and Teleport - and was done in collaboration with the wonderful and talented 
+                            <p>
+                                Based on a classic, Pac-Rem is a game in which the player (my cat) has to collect all the catnip before the dog cops can! This project is all vanilla - no libraries or preprocessors were used.
+                            </p>
+                            <p>
+                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
+                                    Made using
+                                    <span>JavaScript,</span>
+                                    <span>HTML5,</span>
+                                    <span>CSS3</span>
+                                </span>
+                            </p>
+                            <div class="projectLinks">
+                                <button tabindex="-1">
+                                    <a href="https://jameslewis.io/pac-rem/">Live</a>
+                                </button>
+                                <button tabindex="-1">
+                                    <a href="https://github.com/unifolia/pac-rem">GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projectPicture">
+                            <img src="./assets/pac-rem.png" alt="A photo of the app 'Marsometer' on a tablet">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectThree" data-aos="fade-right">
+                    <h3>Marsometer</h3>
+                    <div class="projectContent">
+                        <div class="projectPicture">
+                            <img src="./assets/marsometer.png" alt="A photo of the app 'Cash Comrade' on a mobile phone">
+                        </div>
+                        <div class="projectInfo">
+                            <p>This is an app that allows the user to input a city and compare its current temperature to that of Mars. It uses
+                                APIs
+                                from NASA InSight, OpenWeatherMap, and Teleport - and was done in collaboration with the wonderful and talented
                                 <a href="http://www.bethancdavies.com/">Bethan Davies.</a>
                             </p>
                             <p>
-                                <span class="scrollToSkills"
-                                aria-label="Scroll Down to Skills">
-                                    Made using 
-                                    <span>jQuery,</span> 
-                                    <span>REST APIs,</span> <span>JavaScript,</span> 
+                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
+                                    Made using
+                                    <span>jQuery,</span>
+                                    <span>REST APIs,</span> <span>JavaScript,</span>
                                     <span>HTML5,</span>
                                     <span>SCSS</span>
                                 </span>
@@ -125,37 +159,6 @@
                                 </button>
                                 <button tabindex="-1">
                                     <a href="https://github.com/Marsometer/marsometer">GitHub</a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="projectPicture">
-                            <img src="./assets/marsometer.png" alt="A photo of the app 'Marsometer' on a tablet">
-                        </div>
-                    </div>
-                </div>
-                <div class="projectThree" data-aos="fade-right">
-                    <h3>Cash Comrade</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/cashComrade.png" alt="A photo of the app 'Cash Comrade' on a mobile phone">
-                        </div>
-                        <div class="projectInfo">
-                            <p>Cash Comrade is a dynamic app that helps the user keep track of the money they want to save. One can enter the amount they want to reach, add or subtract money, and even estimate the time that it'll take to reach that goal.</p>
-                            <p>
-                                <span class="scrollToSkills"
-                                aria-label="Scroll Down to Skills">
-                                    Made using 
-                                    <span>JavaScript,</span> 
-                                    <span>HTML5,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/cashcomrade/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/cashComrade">GitHub</a>
                                 </button>
                             </div>
                         </div>
@@ -172,11 +175,11 @@
                 <li><i class="devicon-javascript-plain"></i>JavaScript</li>
                 <li><i class="devicon-react-original"></i>React</li>
                 <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                <li><i class="devicon-nodejs-plain"></i>node.js</li>
                 <li><i class="devicon-git-plain"></i>Git</li>
             </ul>
             <h3>I'd Like To Learn</h3>
             <ul class="futureSkills">
-                <li><i class="devicon-nodejs-plain"></i>node.js</li>
                 <li><i class="devicon-python-plain"></i>Python</li>
                 <li><i class="devicon-vuejs-plain"></i>Vue</li>
             </ul>
@@ -184,7 +187,7 @@
         <section class="outsideOfTech">
             <h2>Outside of Tech</h2>
             <div class="jamesCameraRoll">
-                <button class="checkbox" aria-hidden="true"></button>
+                <button class="checkbox" aria-hidden="true" tabindex="-1"></button>
                 <img src="./assets/jamesCouch.png" alt="A cartoon of a man on a couch listening to music. There is a cat sleeping next to him.">
             </div>
             <p>When I'm not busy typing away, I can usually be found reading (I love a good novel or philosophy book), writing music, or hanging out with my cat Rembrandt.</p>
