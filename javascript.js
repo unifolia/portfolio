@@ -120,6 +120,7 @@ portfolio.SmoothScroll = () => {
 portfolio.LightToggle = () => {
     $(".checkbox").on("click", () => {
         $body.toggleClass("nightTime")
+        $(".skills i").toggleClass("colored")
 
         if ($body.hasClass("nightTime") === true) {
             $jamesCameraRollImg.attr("src", "./assets/jamesCouchNight.png")

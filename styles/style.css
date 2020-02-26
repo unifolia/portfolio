@@ -1167,14 +1167,14 @@ h3 {
   font-size: 2.8rem;
 }
 
-.skills ul li i:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
 .skills ul li:hover {
   cursor: crosshair;
   color: #3b7286;
+}
+
+.skills ul li:hover > i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .jamesCameraRoll {
