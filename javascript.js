@@ -63,7 +63,7 @@ portfolio.onHeadshotClick = () => {
 }
 
 portfolio.headerEmojiLoop = () => {
-    let runEmojiLoop = () => {
+    (runEmojiLoop = () => {
         if ($headshot.hasClass("headshotClicked") === true) {
             let randomEmoji = myInterests[Math.floor((Date.now() / 400) % myInterests.length)]
 
@@ -75,8 +75,7 @@ portfolio.headerEmojiLoop = () => {
             $h1.attr("aria-hidden", "false")
                 .html("James Lewis")
         }
-    }
-    runEmojiLoop()  
+    })()
 }
 
 portfolio.onRembrandtCode = callback => {
@@ -94,12 +93,11 @@ portfolio.onRembrandtCode = callback => {
 
 
 portfolio.rembrandtEmojiTime = () => {
-    rembrandtEmojiLoop = () => {
+    (rembrandtEmojiLoop = () => {
         location.hash = rembrandtArray[Math.floor((Date.now() / 120) % rembrandtArray.length)]
     
         setTimeout(rembrandtEmojiLoop, 50)
-    }
-    rembrandtEmojiLoop()
+    })()
 }
 
 portfolio.SmoothScroll = () => {
@@ -116,6 +114,13 @@ portfolio.SmoothScroll = () => {
     })
 }
 
+portfolio.skillHighlight = () => {
+    $(".skills li").hover(function () {
+        if ($body.hasClass("nightTime") === false) {
+            $("i", this).toggleClass("colored")
+        }
+    })
+}
 
 portfolio.LightToggle = () => {
     $(".checkbox").on("click", () => {
@@ -142,6 +147,7 @@ portfolio.init = () => {
     portfolio.conditionalFadeRight()
     portfolio.generateGreeting()
     portfolio.SmoothScroll()
+    portfolio.skillHighlight()
     portfolio.LightToggle()
     portfolio.onHeadshotClick()
     portfolio.onRembrandtCode(() => {

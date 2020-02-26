@@ -250,7 +250,6 @@ h3 {
             };
             &:hover {
                 cursor: crosshair;
-                color: darken($color: $secondAccentColor, $amount: 20);
                 & > i {
                     transform: scale(1.15);
                 }

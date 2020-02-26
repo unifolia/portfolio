@@ -1169,7 +1169,6 @@ h3 {
 
 .skills ul li:hover {
   cursor: crosshair;
-  color: #3b7286;
 }
 
 .skills ul li:hover > i {
