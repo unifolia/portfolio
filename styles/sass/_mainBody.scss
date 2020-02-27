@@ -98,7 +98,8 @@ h3 {
 };
 
 
-.projectOne {
+.projectOne,
+.projectFour {
     .projectPicture {
         width: 47.5%;
     };
@@ -112,11 +113,6 @@ h3 {
     @include width-945 {
         .projectContent {
             flex-direction: column;
-            .projectPicture {
-                margin: 0 auto;
-                width: 90%;
-                max-width: 575px;
-            };
             .projectInfo {
                 margin: 0 auto;
                 text-align: left;
@@ -128,6 +124,27 @@ h3 {
             .projectLinks {
                 margin: 20px auto 0 auto;
             };
+        };
+    };
+};
+
+.projectOne {
+    @include width-945 {
+        .projectPicture {
+            margin: 0 auto;
+            width: 90%;
+            max-width: 575px;
+        }; 
+    };
+};
+
+.projectFour {
+    @include width-945 {
+        .projectPicture {
+            order: -1;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
         };
     };
 };

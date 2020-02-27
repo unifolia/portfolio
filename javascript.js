@@ -138,6 +138,7 @@ portfolio.LightToggle = () => {
 portfolio.conditionalFadeRight = () => {
     if ($(window).width() < 940) {
         $("div.projectTwo").attr("data-aos", "fade-right")
+        $("div.projectFour").attr("data-aos", "fade-right")
     }
 }
 

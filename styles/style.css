@@ -968,41 +968,62 @@ h3 {
   opacity: 0.4;
 }
 
-.projectOne .projectPicture {
+.projectOne .projectPicture,
+.projectFour .projectPicture {
   width: 47.5%;
 }
 
-.projectOne .projectInfo {
+.projectOne .projectInfo,
+.projectFour .projectInfo {
   text-align: right;
   width: 42.5%;
 }
 
-.projectOne .projectInfo p:nth-child(1) {
+.projectOne .projectInfo p:nth-child(1),
+.projectFour .projectInfo p:nth-child(1) {
   margin: 0 0 20px 0;
 }
 
 @media (max-width: 945px) {
-  .projectOne .projectContent {
+  .projectOne .projectContent,
+  .projectFour .projectContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectOne .projectContent .projectPicture {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 575px;
-  }
-  .projectOne .projectContent .projectInfo {
+  .projectOne .projectContent .projectInfo,
+  .projectFour .projectContent .projectInfo {
     margin: 0 auto;
     text-align: left;
     width: 90%;
   }
-  .projectOne .projectContent .projectInfo p:nth-child(1) {
+  .projectOne .projectContent .projectInfo p:nth-child(1),
+  .projectFour .projectContent .projectInfo p:nth-child(1) {
     margin: 20px 0;
   }
-  .projectOne .projectContent .projectLinks {
+  .projectOne .projectContent .projectLinks,
+  .projectFour .projectContent .projectLinks {
     margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 945px) {
+  .projectOne .projectPicture {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 575px;
+  }
+}
+
+@media (max-width: 945px) {
+  .projectFour .projectPicture {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
   }
 }
 
