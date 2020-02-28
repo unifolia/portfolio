@@ -872,12 +872,12 @@ h3 {
   margin: 0 auto;
 }
 
-.projectsSection .projectsContainer > div {
+.projectsSection .projectsContainer > section {
   min-height: 400px;
   padding: 25px 0;
 }
 
-.projectsSection .projectsContainer > div .projectContent {
+.projectsSection .projectsContainer > section .projectContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,6 +1016,12 @@ h3 {
   }
 }
 
+.projectFour .projectPicture {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 @media (max-width: 945px) {
   .projectFour .projectPicture {
     -webkit-box-ordinal-group: 0;
@@ -1029,6 +1035,9 @@ h3 {
 
 .projectTwo .projectPicture {
   width: 30%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .projectTwo .projectInfo {

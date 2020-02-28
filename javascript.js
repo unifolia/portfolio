@@ -134,18 +134,9 @@ portfolio.LightToggle = () => {
         }
     })
 }
-
-portfolio.conditionalFadeRight = () => {
-    if ($(window).width() < 940) {
-        $("div.projectTwo").attr("data-aos", "fade-right")
-        $("div.projectFour").attr("data-aos", "fade-right")
-    }
-}
-
     
 portfolio.init = () => {
     AOS.init()
-    portfolio.conditionalFadeRight()
     portfolio.generateGreeting()
     portfolio.SmoothScroll()
     portfolio.skillHighlight()
