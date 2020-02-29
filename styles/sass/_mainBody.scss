@@ -97,9 +97,8 @@ h3 {
     };
 };
 
-
-.projectOne,
-.projectFour {
+.pathsAndPodcasts,
+.cashComrade {
     .projectPicture {
         width: 47.5%;
     };
@@ -128,21 +127,22 @@ h3 {
     };
 };
 
-.projectOne {
-    @include width-945 {
-        .projectPicture {
-            margin: 0 auto;
-            width: 90%;
-            max-width: 575px;
-        }; 
-    };
+.pathsAndPodcasts {
+    .projectPicture {
+            order: 0;
+            @include width-945 {
+                margin: 0 auto;
+                width: 90%;
+                max-width: 575px;
+            }; 
+        };
 };
 
-.projectFour {
+.cashComrade {
     .projectPicture {
         order: 2;
         @include width-945 {
-            order: -1;
+            order: 0;
             margin: 0 auto;
             width: 80%;
             max-width: 400px;
@@ -150,7 +150,7 @@ h3 {
     };
 };
 
-.projectTwo {
+.pacRem {
     .projectPicture {
         width: 30%;
         order: 2;
@@ -181,7 +181,7 @@ h3 {
     };
 };
 
-.projectThree {
+.marsometer {
     .projectPicture {
         width: 22.5%;
         flex-shrink: 0;

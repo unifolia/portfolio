@@ -968,90 +968,96 @@ h3 {
   opacity: 0.4;
 }
 
-.projectOne .projectPicture,
-.projectFour .projectPicture {
+.pathsAndPodcasts .projectPicture,
+.cashComrade .projectPicture {
   width: 47.5%;
 }
 
-.projectOne .projectInfo,
-.projectFour .projectInfo {
+.pathsAndPodcasts .projectInfo,
+.cashComrade .projectInfo {
   text-align: right;
   width: 42.5%;
 }
 
-.projectOne .projectInfo p:nth-child(1),
-.projectFour .projectInfo p:nth-child(1) {
+.pathsAndPodcasts .projectInfo p:nth-child(1),
+.cashComrade .projectInfo p:nth-child(1) {
   margin: 0 0 20px 0;
 }
 
 @media (max-width: 945px) {
-  .projectOne .projectContent,
-  .projectFour .projectContent {
+  .pathsAndPodcasts .projectContent,
+  .cashComrade .projectContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectOne .projectContent .projectInfo,
-  .projectFour .projectContent .projectInfo {
+  .pathsAndPodcasts .projectContent .projectInfo,
+  .cashComrade .projectContent .projectInfo {
     margin: 0 auto;
     text-align: left;
     width: 90%;
   }
-  .projectOne .projectContent .projectInfo p:nth-child(1),
-  .projectFour .projectContent .projectInfo p:nth-child(1) {
+  .pathsAndPodcasts .projectContent .projectInfo p:nth-child(1),
+  .cashComrade .projectContent .projectInfo p:nth-child(1) {
     margin: 20px 0;
   }
-  .projectOne .projectContent .projectLinks,
-  .projectFour .projectContent .projectLinks {
+  .pathsAndPodcasts .projectContent .projectLinks,
+  .cashComrade .projectContent .projectLinks {
     margin: 20px auto 0 auto;
   }
 }
 
+.pathsAndPodcasts .projectPicture {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
 @media (max-width: 945px) {
-  .projectOne .projectPicture {
+  .pathsAndPodcasts .projectPicture {
     margin: 0 auto;
     width: 90%;
     max-width: 575px;
   }
 }
 
-.projectFour .projectPicture {
+.cashComrade .projectPicture {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
 @media (max-width: 945px) {
-  .projectFour .projectPicture {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  .cashComrade .projectPicture {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     margin: 0 auto;
     width: 80%;
     max-width: 400px;
   }
 }
 
-.projectTwo .projectPicture {
+.pacRem .projectPicture {
   width: 30%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.projectTwo .projectInfo {
+.pacRem .projectInfo {
   width: 65%;
 }
 
 @media (max-width: 855px) {
-  .projectTwo .projectContent {
+  .pacRem .projectContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectTwo .projectContent .projectPicture {
+  .pacRem .projectContent .projectPicture {
     margin: 0 auto;
     width: 40%;
     max-width: 500px;
@@ -1060,7 +1066,7 @@ h3 {
         -ms-flex-order: 1;
             order: 1;
   }
-  .projectTwo .projectContent .projectInfo {
+  .pacRem .projectContent .projectInfo {
     margin: 0 auto;
     text-align: left;
     width: 90%;
@@ -1068,18 +1074,18 @@ h3 {
         -ms-flex-order: 2;
             order: 2;
   }
-  .projectTwo .projectContent .projectLinks {
+  .pacRem .projectContent .projectLinks {
     margin: 20px auto 0 auto;
   }
 }
 
-.projectThree .projectPicture {
+.marsometer .projectPicture {
   width: 22.5%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-.projectThree .projectInfo {
+.marsometer .projectInfo {
   text-align: right;
   width: 72.5%;
   -ms-flex-negative: 2;
@@ -1087,24 +1093,24 @@ h3 {
 }
 
 @media (max-width: 690px) {
-  .projectThree .projectContent {
+  .marsometer .projectContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .projectThree .projectContent .projectPicture {
+  .marsometer .projectContent .projectPicture {
     margin: 0 auto;
     width: 20%;
     max-width: 150px;
     min-width: 140px;
   }
-  .projectThree .projectContent .projectInfo {
+  .marsometer .projectContent .projectInfo {
     margin: 0 auto;
     text-align: left;
     width: 90%;
   }
-  .projectThree .projectContent .projectLinks {
+  .marsometer .projectContent .projectLinks {
     margin: 20px auto 0 auto;
   }
 }
