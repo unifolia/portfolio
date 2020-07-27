@@ -64,7 +64,7 @@ portfolio.onHeadshotClick = () => {
 
 portfolio.headerEmojiLoop = () => {
     (runEmojiLoop = () => {
-        if ($headshot.hasClass("headshotClicked") === true) {
+        if ($headshot.hasClass("headshotClicked")) {
             let randomEmoji = myInterests[Math.floor((Date.now() / 400) % myInterests.length)]
 
             $h1.attr("aria-hidden", "true")
@@ -116,7 +116,7 @@ portfolio.SmoothScroll = () => {
 
 portfolio.skillHighlight = () => {
     $(".skills li").hover(function () {
-        if ($body.hasClass("nightTime") === false) {
+        if (!$body.hasClass("nightTime")) {
             $("i", this).toggleClass("colored")
         }
     })
@@ -127,11 +127,8 @@ portfolio.LightToggle = () => {
         $body.toggleClass("nightTime")
         $(".skills i").toggleClass("colored")
 
-        if ($body.hasClass("nightTime") === true) {
-            $jamesCameraRollImg.attr("src", "./assets/jamesCouchNight.png")
-        } else {
-            $jamesCameraRollImg.attr("src", "./assets/jamesCouch.png")
-        }
+        $jamesCameraRollImg.attr("src", ($body.hasClass("nightTime") ? 
+            "./assets/jamesCouchNight.png" : "./assets/jamesCouch.png"))
     })
 }
     
