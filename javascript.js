@@ -4,7 +4,7 @@ let $body = $("body")
 let $h1 = $("h1")
 let $headshot = $(".headshot")
 let $htmlBody = $("html,body")
-let $jamesCameraRollImg = $(".jamesCameraRoll img")
+let $jamesCameraRollImg = $(".jamesIllustration img")
 
 let greetingsArray = ["Hello", "Dearest", "Hi", "Hey", "Greetings", "Good day", "Salutations", "Howdy"]
 let myInterests = ["🐱", "🏀", "🎸", "🌺", "🍺", "💻", "📚"]
@@ -127,11 +127,8 @@ portfolio.LightToggle = () => {
         $body.toggleClass("nightTime")
         $(".skills i").toggleClass("colored")
 
-        if ($body.hasClass("nightTime") === true) {
-            $jamesCameraRollImg.attr("src", "./assets/jamesCouchNight.png")
-        } else {
-            $jamesCameraRollImg.attr("src", "./assets/jamesCouch.png")
-        }
+        $jamesCameraRollImg.attr("src", ($body.hasClass("nightTime") ?
+            "./assets/jamesCouchNight.png" : "./assets/jamesCouch.png"))
     })
 }
     
