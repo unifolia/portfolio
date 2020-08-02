@@ -127,8 +127,11 @@ portfolio.LightToggle = () => {
         $body.toggleClass("nightTime")
         $(".skills i").toggleClass("colored")
 
-        $jamesCameraRollImg.attr("src", ($body.hasClass("nightTime") ? 
-            "./assets/jamesCouchNight.png" : "./assets/jamesCouch.png"))
+        if ($body.hasClass("nightTime") === true) {
+            $jamesCameraRollImg.attr("src", "./assets/jamesCouchNight.png")
+        } else {
+            $jamesCameraRollImg.attr("src", "./assets/jamesCouch.png")
+        }
     })
 }
     
