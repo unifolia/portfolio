@@ -102,6 +102,39 @@ h3 {
     };
 };
 
+.hmmstagram,
+.marsometer {
+    .projectPicture {
+        width: 22.5%;
+        flex-shrink: 0;
+    };
+    .projectInfo {
+        text-align: right;
+        width: 72.5%;
+        flex-shrink: 2;
+    };
+    @include width-690 {
+        .projectContent {
+            flex-direction: column;
+            .projectPicture {
+                order: 0;
+                margin: 0 auto;
+                width: 20%;
+                max-width: 150px;
+                min-width: 140px;
+            };
+            .projectInfo {
+                margin: 0 auto;
+                text-align: left;
+                width: 90%;
+            };
+            .projectLinks {
+                margin: 20px auto 0 auto;
+            };
+        };
+    };
+};
+
 .pathsAndPodcasts,
 .cashComrade {
     .projectPicture {
@@ -129,6 +162,15 @@ h3 {
                 margin: 20px auto 0 auto;
             };
         };
+    };
+};
+
+.hmmstagram {
+    .projectPicture {
+        order: 2;
+    };
+    .projectInfo {
+        text-align: left;
     };
 };
 
@@ -178,38 +220,6 @@ h3 {
                 text-align: left;
                 width: 90%;
                 order: 2;
-            };
-            .projectLinks {
-                margin: 20px auto 0 auto;
-            };
-        };
-    };
-};
-
-.marsometer,
-.hmmstagram {
-    .projectPicture {
-        width: 22.5%;
-        flex-shrink: 0;
-    };
-    .projectInfo {
-        text-align: right;
-        width: 72.5%;
-        flex-shrink: 2;
-    };
-    @include width-690 {
-        .projectContent {
-            flex-direction: column;
-            .projectPicture {
-                margin: 0 auto;
-                width: 20%;
-                max-width: 150px;
-                min-width: 140px;
-            };
-            .projectInfo {
-                margin: 0 auto;
-                text-align: left;
-                width: 90%;
             };
             .projectLinks {
                 margin: 20px auto 0 auto;
