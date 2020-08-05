@@ -1,6 +1,3 @@
-# portfolio
-Check it out 🏂
-
 # Fun bits: 
 
 a) Click on my photo to change the header
