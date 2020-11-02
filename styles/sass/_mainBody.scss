@@ -3,14 +3,14 @@
 
 main {
     border-radius: 25px;
-    background-color: lighten($color: $backgroundColor, $amount: 3.5)
-}
+    background-color: lighten($color: $backgroundColor, $amount: 2.25)
+};
 
 main section {
     margin: 25px 0;
 };
 
-h2  {
+h2 {
     position: relative;
     display: inline-block;
     margin-left: 50%;
