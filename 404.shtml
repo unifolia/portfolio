@@ -17,7 +17,7 @@
         <p>Ok, this is, like, super awkward. Whatever you're looking for is... uh... basically not here. If this is a serious issue, please email me at james@jameslewis.io. My apologies.</p>
         <a class="goHome" href="./index.html">Let's go home</a>
     </div>
-    <div class="ghostWrapper">
+    <div class="ghostWrapper" aria-hidden="true">
         <svg viewBox="0 0 420 162">
             <g class="ghost">
                 <g class="bodyRect">
