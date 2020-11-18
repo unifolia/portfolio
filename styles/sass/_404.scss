@@ -29,22 +29,13 @@
         font-family: $headerFont;
         border-bottom: 2px solid $accentColor;
         font-size: 2rem;
-        &:hover {
-            transform: scale(1.2);
-        };
     };
 };
 
 .ghostWrapper {
-    position: fixed;
-    top: 12%;
-    left: 7%;
-    width: 30%;
-    max-width: 200px;
-    @include width-540 {
-        left: 5%;
-        width: 25%;
-    };
+    width: 60%;
+    max-width: 280px;
+    min-width: 150px;
 };
 
 svg {
@@ -120,8 +111,8 @@ svg path {
 };
 
 .ghost {
-    -webkit-animation: ghostMove 2s -1s 10 alternate ease-in-out forwards;
-    animation: ghostMove 2s -1s 10 alternate ease-in-out forwards;
+    -webkit-animation: ghostMove 13s -1s 10 alternate ease-in-out forwards;
+    animation: ghostMove 13s -1s 10 alternate ease-in-out forwards;
 };
 
 @-webkit-keyframes ghostMove {
