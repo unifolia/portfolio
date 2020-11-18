@@ -3,10 +3,10 @@
 $headerFont: 'PT Sans', sans-serif;
 $bodyFont: 'Noto Sans JP', sans-serif;
 
-$backgroundColor: #fdf6e5;
-$accentColor: #8db88080;
-$secondAccentColor: #6ab3bd;
-$fontColor: #151515;
+$backgroundColor: #faf3ed;
+$accentColor: #9cb89480;
+$secondAccentColor: #87a3ca;
+$fontColor: #1d1d1d;
 $nightFontColor: #e9d8c4;
 // Not currently in use ⬇️
 // $nightAccentColor: #4a6385; 
@@ -102,7 +102,7 @@ main section {
     .projectInfo p:hover > a,
     .projectInfo p:hover > span span {
         &::after {
-            background: darken($color: #9e80b8, $amount: 10);
+            background: darken($color: #c28ba2, $amount: 10);
         };
         &:hover:after,
         &:focus-within::after {

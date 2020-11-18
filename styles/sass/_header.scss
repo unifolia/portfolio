@@ -3,7 +3,7 @@
 
 a.visuallyHidden {
     font-family: $bodyFont;
-}
+};
 
 .headerContent {
     padding: 40px 0 20px 0;
@@ -16,7 +16,7 @@ a.visuallyHidden {
     };
     @include width-480 {
         padding-top: 20px;
-    }
+    };
 };
 
 nav {
@@ -74,8 +74,8 @@ nav {
     @include width-416 {
         h1 span {
             display: block;
-        }
-    }
+        };
+    };
 };
 
 .infoAndPicture {
@@ -111,7 +111,7 @@ nav {
             &:hover::after,
             &:focus-within::after {
                 opacity: 0.4;
-            }
+            };
         };
     };
     .headshotWrapper {

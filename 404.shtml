@@ -14,8 +14,35 @@
 <body>
     <div class="error404 wrapper">
         <h1>Oh no!</h1>
-        <p>Whatever you're looking for is... uh... not here 😬</p>
-        <a href="./index.html">Home</a>
+        <p>Ok, this is, like, super awkward. Whatever you're looking for is... uh... basically not here. If this is a serious issue, please email me at james@jameslewis.io. My apologies.</p>
+        <a class="goHome" href="./index.html">Let's go home</a>
+    </div>
+    <div class="ghostWrapper">
+        <svg viewBox="0 0 420 162">
+            <g class="ghost">
+                <g class="bodyRect">
+                    <path
+                        d="M0 32h128v64H0zM16 16h16v16H16zM32 16h16v16H32zM32 0h16v16H32zM48 0h16v16H48zM64 0h16v16H64zM80 0h16v16H80zM80 16h16v16H80zM64 16h16v16H64zM48 16h16v16H48z" />
+                </g>
+                <g class="bodyShadow">
+                    <path
+                        d="M96 16h16v16H96zM80 0h16v16H80zM112 32h16v16h-16zM112 48h16v16h-16zM112 64h16v16h-16zM112 80h16v16h-16zM112 96h16v16h-16zM96 96h16v16H96zM96 80h16v16H96zM96 64h16v16H96z" />
+                </g>
+                <g>
+                    <path class="feetPx7" d="M96 96h16v16H96z" />
+                    <path class="feetPx6" d="M80 96h16v16H80z" />
+                    <path class="feetPx5" d="M64 96h16v16H64z" />
+                    <path class="feetPx4" d="M48 96h16v16H48z" />
+                    <path class="feetPx3" d="M32 96h16v16H32z" />
+                    <path class="feetPx2" d="M16 96h16v16H16z" />
+                    <path class="feetPx1" d="M0 96h16v16H0z" />
+                </g>    
+                <path class="eyeballs" d="M33 32h32v32H33zM80 32h32v32H80z" />
+                <path class="eye1" d="M49 48h16v16H49z" />
+                <path class="eye2" d="M80 48h16v16H80z" />
+            </g>
+            </g>
+        </svg>
     </div>
 </body>
 </html>
