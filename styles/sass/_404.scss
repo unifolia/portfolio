@@ -14,7 +14,6 @@
         position: relative;
         font-size: 3rem;
         &:hover::after {
-            color: blue;
             content: "";
             position: absolute;
             width: 80%;
@@ -32,10 +31,15 @@
     };
 };
 
+.goHome {
+    margin: 0 0 60px 0;
+};
+
+///
+
 .ghostWrapper {
     width: 60%;
     max-width: 280px;
-    min-width: 150px;
 };
 
 svg {
@@ -47,15 +51,15 @@ svg path {
 };
 
 .bodyRect {
-    fill: #CB2647;
+    fill: $pacColor;
 };
 
 .bodyShadow {
-    fill: #62233A;
+    fill: darken($color: $pacColor, $amount: 24);
 };
 
 .eyeballs {
-    fill: #E1C5B2;
+    fill: #E1C5B2EE;
 };
 
 .feetPx7 {
@@ -63,39 +67,39 @@ svg path {
 };
 
 .feetPx6 {
-    fill: #CB2647;
+    fill: $pacColor;
     -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
     animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 };
 
 .feetPx5 {
-    fill: #CB2647;
+    fill: $pacColor;
     opacity: 0;
     -webkit-animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
     animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
 };
 
 .feetPx4 {
-    fill: #CB2647;
+    fill: $pacColor;
     -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
     animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 };
 
 .feetPx3 {
-    fill: #CB2647;
+    fill: $pacColor;
     -webkit-animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
     animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
 };
 
 .feetPx2 {
-    fill: #CB2647;
+    fill: $pacColor;
     opacity: 0;
     -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
     animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 };
 
 .feetPx1 {
-    fill: #CB2647;
+    fill: $pacColor;
 };
 
 .eye1 {
@@ -146,39 +150,23 @@ svg path {
 };
 
 @-webkit-keyframes fadeBlink {
-    0% {
-        opacity: 0;
-    };
-    100% {
-        opacity: 1;
-    };
+    0% { opacity: 0 };
+    100% { opacity: 1 };
 };
 
 @keyframes fadeBlink {
-    0% {
-        opacity: 0;
-    };
-    100% {
-        opacity: 1;
-    };
+    0% { opacity: 0 };
+    100% { opacity: 1 };
 };
 
 @-webkit-keyframes fadeBlinkAlter {
-    0% {
-        opacity: 1;
-    };
-    100% {
-        opacity: 0;
-    };
+    0% { opacity: 1 };
+    100% { opacity: 0 };
 };
 
 @keyframes fadeBlinkAlter {
-    0% {
-        opacity: 1;
-    };
-    100% {
-        opacity: 0;
-    };
+    0% { opacity: 1 };
+    100% { opacity: 0 };
 };
 
 @-webkit-keyframes eyeMoveLeft {

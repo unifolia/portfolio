@@ -6,7 +6,7 @@ let $headshot = $(".headshot")
 let $htmlBody = $("html,body")
 let $jamesCameraRollImg = $(".jamesIllustration img")
 
-let greetingsArray = ["Hello", "Dearest", "Hi", "Hey", "Greetings", "Good day", "Salutations", "Howdy"]
+let greetingsArray = ["Hello", "Hi", "Hey", "Greetings", "G'day", "Salutations", "Howdy-do", "Good morrow", "What's crackin'", "Whassup"]
 let myInterests = ["🐱", "🏀", "🎸", "🌺", "🍺", "💻", "📚"]
 
 let userInput;
@@ -51,8 +51,8 @@ let rembrandtArray = [
 portfolio.generateGreeting = () => {
     let randomGreeting = greetingsArray[Math.floor(Math.random() * greetingsArray.length)]
 
-    $("textarea").attr("placeholder", `${randomGreeting} James, `)
-    $("form p a").attr("href", `mailto:james@jameslewis.io?Subject=${randomGreeting}%20James`)
+    $("textarea").attr("placeholder", `${randomGreeting}, James... `)
+    $("form p a").attr("href", `mailto:james@jameslewis.io?Subject=${randomGreeting},%20James...`)
 }
 
 portfolio.onHeadshotClick = () => {
