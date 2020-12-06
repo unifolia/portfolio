@@ -131,7 +131,15 @@ portfolio.LightToggle = () => {
             "./assets/jamesCouchNight.png" : "./assets/jamesCouch.png"))
     })
 }
-    
+
+portfolio.console = () => {
+    // Night mode coming soon
+    console.log(
+        "%cWelcome! %c🥳", 
+        "font-size: 20px; font-weight: 600; text-shadow: 3px 3px 0 #9cb89480; text-align: center; display: block; background: #faf3ed; padding: 50px 0;", 
+        "font-size: 50px; text-shadow: 3px 3px 0 #87a3ca; text-align: center;  display: block;  background: #faf3ed; padding: 0 15px 100px 0")
+}
+
 portfolio.init = () => {
     AOS.init()
     portfolio.generateGreeting()
@@ -142,6 +150,7 @@ portfolio.init = () => {
     portfolio.onRembrandtCode(() => {
         portfolio.rembrandtEmojiTime()
     })
+    portfolio.console()
 }
 
 $(() => {
