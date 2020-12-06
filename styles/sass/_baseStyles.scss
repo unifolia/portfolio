@@ -103,7 +103,7 @@ main section {
     .projectInfo p:hover > a,
     .projectInfo p:hover > span span {
         &::after {
-            background: darken($color: #c28ba2, $amount: 10);
+            background: #a57589;
         };
         &:hover:after,
         &:focus-within::after {

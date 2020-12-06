@@ -149,7 +149,7 @@ header button {
     background: none;
     .fa-angle-double-down {
         font-size: 50px;
-        animation-duration: 1s;
+        animation-duration: 0.75s;
         animation-iteration-count: infinite;
         &:hover {
            text-shadow: 0px 0px 10px $secondAccentColor;
