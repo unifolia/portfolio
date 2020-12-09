@@ -152,14 +152,16 @@ portfolio.console = () => {
         display: block; 
         color: ${color}; background: ${bg}; 
         padding: 75px 0 50px 0; 
-        border-radius: 75px 75px 0 0`, 
+        border-radius: 75px 75px 0 0;`, 
         // Second style
         `font-size: 50px; 
         text-shadow: 3px 3px 1px ${emojiShadow}; text-align: center;  
         display: block; 
         color: ${color}; background: ${bg}; 
         padding: 0 5px 100px 0; 
-        border-radius: 0 0 75px 75px;`
+        border-radius: 0 0 75px 75px;`,
+        //
+        "If you're using Chrome or Safari, this message will look weird. I'm working on getting everything consistent, ok?! I suggest you use Firefox. Or don't. Whatever."
     );
 };
 
