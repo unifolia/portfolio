@@ -102,6 +102,41 @@ h3 {
     };
 };
 
+.github-app {
+    .projectPicture {
+        width: 30%;
+        flex-shrink: 0;
+        img {
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+    };
+    .projectInfo {
+        text-align: right;
+        width: 65%;
+        flex-shrink: 2;
+    };
+    @include width-690 {
+        .projectContent {
+            flex-direction: column;
+            .projectPicture {
+                order: 0;
+                margin: 0 auto;
+                width: 40%;
+                min-width: 270px;
+            };
+            .projectInfo {
+                margin: 0 auto;
+                text-align: left;
+                width: 90%;
+            };
+            .projectLinks {
+                margin: 20px auto 0 auto;
+            };
+        };
+    };
+};
+
 .hmmstagram,
 .marsometer {
     .projectPicture {
