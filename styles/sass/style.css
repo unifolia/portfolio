@@ -774,35 +774,42 @@ h3 {
   opacity: 0.4;
 }
 
-.github-app .projectPicture {
+.github-app .projectPicture,
+.wurdle .projectPicture {
   width: 30%;
   flex-shrink: 0;
 }
-.github-app .projectPicture img {
+.github-app .projectPicture img,
+.wurdle .projectPicture img {
   border: 2px solid black;
   border-radius: 25px;
 }
-.github-app .projectInfo {
+.github-app .projectInfo,
+.wurdle .projectInfo {
   text-align: right;
   width: 65%;
   flex-shrink: 2;
 }
 @media (max-width: 690px) {
-  .github-app .projectContent {
+  .github-app .projectContent,
+.wurdle .projectContent {
     flex-direction: column;
   }
-  .github-app .projectContent .projectPicture {
+  .github-app .projectContent .projectPicture,
+.wurdle .projectContent .projectPicture {
     order: 0;
     margin: 0 auto;
     width: 40%;
     min-width: 270px;
   }
-  .github-app .projectContent .projectInfo {
+  .github-app .projectContent .projectInfo,
+.wurdle .projectContent .projectInfo {
     margin: 0 auto;
     text-align: left;
     width: 90%;
   }
-  .github-app .projectContent .projectLinks {
+  .github-app .projectContent .projectLinks,
+.wurdle .projectContent .projectLinks {
     margin: 20px auto 0 auto;
   }
 }
