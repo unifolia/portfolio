@@ -108,9 +108,7 @@ portfolio.emojiTime = ({
     const loopDuration =
         loopType === "frame" ? loopSpeed * emojiArray.length : loopSpeed;
 
-    logger
-        ? console.log(loopType, loopSpeed, loopSequences, loopDuration)
-        : null;
+    logger && console.log(loopType, loopSpeed, loopSequences, loopDuration);
 
     const loopTypeHandlers = {
         frameHandler: async (i) => {
@@ -159,11 +157,11 @@ portfolio.skillHighlight = () => {
     skills.forEach((skill) => {
         skill.addEventListener("mouseover", () => {
             const isNight = body.classList.contains("nightTime");
-            !isNight ? skill.classList.toggle("colored") : null;
+            !isNight && skill.classList.toggle("colored");
         });
         skill.addEventListener("mouseleave", () => {
             const isNight = body.classList.contains("nightTime");
-            !isNight ? skill.classList.remove("colored") : null;
+            !isNight && skill.classList.remove("colored");
         });
     });
 };
