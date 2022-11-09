@@ -9,7 +9,12 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
@@ -18,7 +23,9 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -49,15 +56,19 @@ abbr[title] {
           text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -75,7 +86,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -90,7 +102,8 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -107,31 +120,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -157,12 +185,14 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -171,7 +201,8 @@ textarea {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -180,7 +211,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -213,7 +245,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -247,6 +281,7 @@ ul {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -356,8 +391,17 @@ main section {
   outline: 2px dotted #aabeda;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 a.visuallyHidden {
   font-family: "noto sans", sans-serif;
+}
+
+header {
+  height: 100vh;
 }
 
 .headerContent {
@@ -444,6 +488,7 @@ nav ul li:hover > a {
 .infoAndPicture {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .infoAndPicture section {
   font-family: "noto sans", sans-serif;
@@ -521,28 +566,29 @@ nav ul li:hover > a {
   }
 }
 
-header button {
+header .scrollToProjects {
   border: none;
   background: none;
 }
-header button .fa-angle-double-down {
+header .scrollToProjects .fa-angle-double-down {
   font-size: 50px;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-header button .fa-angle-double-down:hover {
+header .scrollToProjects .fa-angle-double-down:hover {
   text-shadow: 0px 0px 10px #87a3ca;
 }
 @media (max-width: 590px) {
-  header button {
+  header .scrollToProjects {
     margin: 20px 0 0 0;
   }
 }
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -652,6 +698,11 @@ main section {
   outline: 2px dotted #aabeda;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 main {
   border-radius: 25px;
   background-color: #fcf7f3;
@@ -735,20 +786,20 @@ h3 {
 .projectContent .projectInfo .scrollToSkills:hover {
   cursor: pointer;
 }
-.projectContent .projectInfo:hover > a, .projectContent .projectInfo:hover > span span, .projectContent .projectInfo > p:hover > a, .projectContent .projectInfo > p:hover > span span,
+.projectContent .projectInfo:hover > a, .projectContent .projectInfo:hover > span a, .projectContent .projectInfo > p:hover > a, .projectContent .projectInfo > p:hover > span a,
 .projectContent .projectInfo .scrollToSkills:hover > a,
-.projectContent .projectInfo .scrollToSkills:hover > span span,
+.projectContent .projectInfo .scrollToSkills:hover > span a,
 .projectContent .projectInfo .scrollToSkills > p:hover > a,
-.projectContent .projectInfo .scrollToSkills > p:hover > span span {
+.projectContent .projectInfo .scrollToSkills > p:hover > span a {
   z-index: 1;
   position: relative;
   cursor: pointer;
 }
-.projectContent .projectInfo:hover > a::after, .projectContent .projectInfo:hover > span span::after, .projectContent .projectInfo > p:hover > a::after, .projectContent .projectInfo > p:hover > span span::after,
+.projectContent .projectInfo:hover > a::after, .projectContent .projectInfo:hover > span a::after, .projectContent .projectInfo > p:hover > a::after, .projectContent .projectInfo > p:hover > span a::after,
 .projectContent .projectInfo .scrollToSkills:hover > a::after,
-.projectContent .projectInfo .scrollToSkills:hover > span span::after,
+.projectContent .projectInfo .scrollToSkills:hover > span a::after,
 .projectContent .projectInfo .scrollToSkills > p:hover > a::after,
-.projectContent .projectInfo .scrollToSkills > p:hover > span span::after {
+.projectContent .projectInfo .scrollToSkills > p:hover > span a::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -762,15 +813,15 @@ h3 {
   border-radius: 2px;
   transition: all 0.3s;
 }
-.projectContent .projectInfo:hover > a:hover::after, .projectContent .projectInfo:hover > a:focus-within::after, .projectContent .projectInfo:hover > span span:hover::after, .projectContent .projectInfo:hover > span span:focus-within::after, .projectContent .projectInfo > p:hover > a:hover::after, .projectContent .projectInfo > p:hover > a:focus-within::after, .projectContent .projectInfo > p:hover > span span:hover::after, .projectContent .projectInfo > p:hover > span span:focus-within::after,
+.projectContent .projectInfo:hover > a:hover::after, .projectContent .projectInfo:hover > a:focus-within::after, .projectContent .projectInfo:hover > span a:hover::after, .projectContent .projectInfo:hover > span a:focus-within::after, .projectContent .projectInfo > p:hover > a:hover::after, .projectContent .projectInfo > p:hover > a:focus-within::after, .projectContent .projectInfo > p:hover > span a:hover::after, .projectContent .projectInfo > p:hover > span a:focus-within::after,
 .projectContent .projectInfo .scrollToSkills:hover > a:hover::after,
 .projectContent .projectInfo .scrollToSkills:hover > a:focus-within::after,
-.projectContent .projectInfo .scrollToSkills:hover > span span:hover::after,
-.projectContent .projectInfo .scrollToSkills:hover > span span:focus-within::after,
+.projectContent .projectInfo .scrollToSkills:hover > span a:hover::after,
+.projectContent .projectInfo .scrollToSkills:hover > span a:focus-within::after,
 .projectContent .projectInfo .scrollToSkills > p:hover > a:hover::after,
 .projectContent .projectInfo .scrollToSkills > p:hover > a:focus-within::after,
-.projectContent .projectInfo .scrollToSkills > p:hover > span span:hover::after,
-.projectContent .projectInfo .scrollToSkills > p:hover > span span:focus-within::after {
+.projectContent .projectInfo .scrollToSkills > p:hover > span a:hover::after,
+.projectContent .projectInfo .scrollToSkills > p:hover > span a:focus-within::after {
   opacity: 0.4;
 }
 
@@ -1144,6 +1195,7 @@ form p a:hover::after, form p a:focus-within::after {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -1253,12 +1305,18 @@ main section {
   outline: 2px dotted #aabeda;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 footer p {
   text-align: center;
 }
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -1368,6 +1426,11 @@ main section {
   outline: 2px dotted #aabeda;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 .error404 {
   height: 90vh;
   padding-top: 25px;
@@ -1416,7 +1479,7 @@ svg path {
 }
 
 .bodyRect {
-  fill: #CB2647;
+  fill: #cb2647;
 }
 
 .bodyShadow {
@@ -1432,39 +1495,39 @@ svg path {
 }
 
 .feetPx6 {
-  fill: #CB2647;
+  fill: #cb2647;
   -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
   animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 }
 
 .feetPx5 {
-  fill: #CB2647;
+  fill: #cb2647;
   opacity: 0;
   -webkit-animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
   animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
 }
 
 .feetPx4 {
-  fill: #CB2647;
+  fill: #cb2647;
   -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
   animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 }
 
 .feetPx3 {
-  fill: #CB2647;
+  fill: #cb2647;
   -webkit-animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
   animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
 }
 
 .feetPx2 {
-  fill: #CB2647;
+  fill: #cb2647;
   opacity: 0;
   -webkit-animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
   animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
 }
 
 .feetPx1 {
-  fill: #CB2647;
+  fill: #cb2647;
 }
 
 .eye1 {

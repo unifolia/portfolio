@@ -1,14 +1,14 @@
-@import 'baseStyles';
-@import 'mixins';
+@import "baseStyles";
+@import "mixins";
 
 main {
     border-radius: 25px;
     background-color: lighten($color: $backgroundColor, $amount: 1.5);
-};
+}
 
 main section {
     margin: 25px 0;
-};
+}
 
 h2 {
     position: relative;
@@ -18,7 +18,7 @@ h2 {
     font-family: $headerFont;
     font-size: 2rem;
     &:hover::after {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         bottom: -5px;
@@ -26,14 +26,14 @@ h2 {
         width: 90%;
         border-bottom: 4px solid $accentColor;
         border-radius: 35%;
-    };
+    }
     @include width-590 {
         display: block;
         text-align: center;
         margin: 0;
         transform: none;
         &:hover::after {
-            content: '';
+            content: "";
             display: inline-block;
             position: absolute;
             bottom: -2px;
@@ -41,20 +41,20 @@ h2 {
             width: 50%;
             border-bottom: 3px solid $accentColor;
             border-radius: 35%;
-        };
-    };
-};
+        }
+    }
+}
 
 h3 {
     font-size: 1.3rem;
     text-align: center;
-};
+}
 
 .projectsSection {
     margin: 25px 0 0 0;
     .projectsContainer {
-    width: 90%;
-    margin: 0 auto;
+        width: 90%;
+        margin: 0 auto;
         & > section {
             min-height: 400px;
             padding: 25px 0;
@@ -62,17 +62,17 @@ h3 {
                 display: flex;
                 justify-content: space-between;
                 margin: 10px 0;
-            };    
-        };
-    };
-};
+            }
+        }
+    }
+}
 
 .projectContent {
     display: flex;
     padding: 25px 0;
     img {
         width: 100%;
-    };
+    }
     .projectInfo {
         display: flex;
         flex-direction: column;
@@ -84,23 +84,23 @@ h3 {
         .scrollToSkills {
             &:hover,
             & > p:hover {
-                & > a, 
-                & > span span {
+                & > a,
+                & > span a {
                     z-index: 1;
                     position: relative;
                     cursor: pointer;
                     &::after {
                         @include afterOverlay;
-                    };
+                    }
                     &:hover::after,
                     &:focus-within::after {
                         opacity: 0.4;
-                    };
-                };
-            };
-        };
-    };
-};
+                    }
+                }
+            }
+        }
+    }
+}
 
 .github-app,
 .wurdle {
@@ -111,12 +111,12 @@ h3 {
             border: 2px solid black;
             border-radius: 25px;
         }
-    };
+    }
     .projectInfo {
         text-align: right;
         width: 65%;
         flex-shrink: 2;
-    };
+    }
     @include width-690 {
         .projectContent {
             flex-direction: column;
@@ -125,30 +125,30 @@ h3 {
                 margin: 0 auto;
                 width: 40%;
                 min-width: 270px;
-            };
+            }
             .projectInfo {
                 margin: 0 auto;
                 text-align: left;
                 width: 90%;
-            };
+            }
             .projectLinks {
                 margin: 20px auto 0 auto;
-            };
-        };
-    };
-};
+            }
+        }
+    }
+}
 
 .hmmstagram,
 .marsometer {
     .projectPicture {
         width: 22.5%;
         flex-shrink: 0;
-    };
+    }
     .projectInfo {
         text-align: right;
         width: 72.5%;
         flex-shrink: 2;
-    };
+    }
     @include width-690 {
         .projectContent {
             flex-direction: column;
@@ -158,31 +158,31 @@ h3 {
                 width: 20%;
                 max-width: 150px;
                 min-width: 140px;
-            };
+            }
             .projectInfo {
                 margin: 0 auto;
                 text-align: left;
                 width: 90%;
-            };
+            }
             .projectLinks {
                 margin: 20px auto 0 auto;
-            };
-        };
-    };
-};
+            }
+        }
+    }
+}
 
 .pathsAndPodcasts,
 .cashComrade {
     .projectPicture {
         width: 47.5%;
-    };
+    }
     .projectInfo {
         text-align: right;
         width: 42.5%;
         p:nth-child(1) {
             margin: 0 0 20px 0;
         }
-    };
+    }
     @include width-945 {
         .projectContent {
             flex-direction: column;
@@ -193,33 +193,33 @@ h3 {
                 p:nth-child(1) {
                     margin: 20px 0;
                 }
-            };
+            }
             .projectLinks {
                 margin: 20px auto 0 auto;
-            };
-        };
-    };
-};
+            }
+        }
+    }
+}
 
 .hmmstagram {
     .projectPicture {
         order: 2;
-    };
+    }
     .projectInfo {
         text-align: left;
-    };
-};
+    }
+}
 
 .pathsAndPodcasts {
     .projectPicture {
-            order: 0;
-            @include width-945 {
-                margin: 0 auto;
-                width: 90%;
-                max-width: 575px;
-            }; 
-        };
-};
+        order: 0;
+        @include width-945 {
+            margin: 0 auto;
+            width: 90%;
+            max-width: 575px;
+        }
+    }
+}
 
 .cashComrade {
     .projectPicture {
@@ -229,18 +229,18 @@ h3 {
             margin: 0 auto;
             width: 80%;
             max-width: 400px;
-        };
-    };
-};
+        }
+    }
+}
 
 .pacRem {
     .projectPicture {
         width: 30%;
         order: 2;
-    };
+    }
     .projectInfo {
         width: 65%;
-    };
+    }
     @include width-855 {
         .projectContent {
             flex-direction: column;
@@ -250,19 +250,19 @@ h3 {
                 max-width: 500px;
                 min-width: 200px;
                 order: 1;
-            };
+            }
             .projectInfo {
                 margin: 0 auto;
                 text-align: left;
                 width: 90%;
                 order: 2;
-            };
+            }
             .projectLinks {
                 margin: 20px auto 0 auto;
-            };
-        };
-    };
-};
+            }
+        }
+    }
+}
 
 .projectLinks {
     margin: 20px 0;
@@ -278,13 +278,13 @@ h3 {
             top: 4px;
             left: 2px;
             box-shadow: 1px 1px $accentColor;
-        };
+        }
         a {
             display: inline-block;
             width: 150px;
             height: 100%;
-        };
-    };
+        }
+    }
     @include width-450 {
         display: flex;
         flex-direction: column;
@@ -292,14 +292,14 @@ h3 {
         button {
             margin: 10px 0;
             width: 100%;
-        };
-    };
-}; 
+        }
+    }
+}
 
 .skills {
     .futureSkills {
         padding: 40px 0 20px 0;
-    };
+    }
     ul {
         margin: 0 auto;
         padding: 40px 0;
@@ -319,16 +319,16 @@ h3 {
             i {
                 padding: 10px;
                 font-size: 2.8rem;
-            };
+            }
             &:hover {
                 cursor: crosshair;
                 & > i {
                     transform: scale(1.15);
-                };
-            };
-        };
-    };
-};
+                }
+            }
+        }
+    }
+}
 
 .outsideOfTech {
     .jamesIllustration {
@@ -345,19 +345,18 @@ h3 {
             width: 16.3%;
             opacity: 0;
             cursor: pointer;
-        };
+        }
         img {
             width: 100%;
             height: auto;
             z-index: 1;
-        };
-    };
+        }
+    }
     .jamesInfo {
         margin: 0 auto;
         width: 90%;
-    };
-};
-
+    }
+}
 
 form {
     width: 90%;
@@ -365,7 +364,7 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    input, 
+    input,
     textarea {
         padding: 5px 5px 5px 10px;
         background: none;
@@ -376,17 +375,17 @@ form {
         &::placeholder {
             opacity: 0.9;
             color: $fontColor;
-        };
+        }
         @include width-590 {
             width: 95%;
             margin: 15px auto;
-        };
-    };
+        }
+    }
     textarea {
         border: 2px solid $accentColor;
         border-radius: 5px;
         padding: 10px;
-    };
+    }
     .topFormRow {
         display: flex;
         justify-content: space-between;
@@ -394,11 +393,11 @@ form {
             flex-direction: column;
             input {
                 input::placeholder {
-                text-align: center;
-                };
-            };
-        };
-    };
+                    text-align: center;
+                }
+            }
+        }
+    }
     button {
         font-size: 1.5rem;
         width: 30%;
@@ -416,8 +415,8 @@ form {
             left: 2px;
             cursor: pointer;
             box-shadow: 2px 2px $accentColor;
-        };
-    };
+        }
+    }
     p {
         text-align: center;
         a {
@@ -429,10 +428,10 @@ form {
             &:hover::after,
             &:focus-within::after {
                 opacity: 0.4;
-            };
-        };
-    };
+            }
+        }
+    }
     @include width-590 {
         width: 95%;
-    };
-};
+    }
+}

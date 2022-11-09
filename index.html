@@ -1,353 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="James Lewis is a Toronto-based full stack web developer who works with HTML, CSS, and JavaScript"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="James Lewis" />
+        <meta
+            name="twitter:description"
+            content="James Lewis, a web developer from Toronto"
+        />
+        <meta name="twitter:creator" content="@jameslewisdev" />
+        <meta
+            name="twitter:image"
+            content="https://pbs.twimg.com/profile_images/1191575633614258176/RmW8rQ_G_400x400.jpg"
+        />
+        <meta name="theme-color" content="#ebfaea" />
 
-    <meta name=description content="James Lewis is a Toronto-based full stack web developer who works with HTML, CSS, and JavaScript">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="James Lewis" />
-    <meta name="twitter:description" content="James Lewis, a web developer from Toronto" />
-    <meta name="twitter:creator" content="@jameslewisdev" />
-    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1191575633614258176/RmW8rQ_G_400x400.jpg"/>
-    <meta name="theme-color" content="#ebfaea">
+        <script
+            src="https://kit.fontawesome.com/4195f42b5c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=PT+Sans:700|Noto+Sans+JP&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        />
+        <link rel="stylesheet" href="./styles/sass/style.css" />
 
-    <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicons/site.webmanifest">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="./styles/sass/style.css">
-
-    <title>James Lewis | Web Developer</title>
-</head>
-<body>
-    <header>
-        <div class="headerContent wrapper">
-            <a href="#projects" class="visuallyHidden">Skip to Projects</a>
-            <nav>
-                <h1>James Lewis</h1>
-                <ul class="socialLinks">
-                    <li>
-                        <a href="https://www.linkedin.com/in/james-lewis-aba632160/" title="LinkedIn"><i class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/unifolia" title="GitHub"><i class="fab fa-github"  aria-label="GitHub"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/jameslewisdev" title="Twitter"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://medium.com/@james_9108"  title="Medium"><i class="fab fa-medium"  aria-label="Medium"></i></a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="infoAndPicture">
-                <section>
-                    <p>Hello! 👨🏻‍💻 I'm James and I’m a full-stack (skewed towards front-end) web developer and software engineer based in Toronto, Canada. I hope to make the web a beautiful, fun, and accessible place for everyone.</p>
-
-                    <p>I am currently looking for new opportunities!</p>
-                    
-                    <p>
-                        <a href="#contact">Let's connect! 
-                            <span role="img" aria-label="A peace sign">✌︎</span>
-                        </a>
-                    </p>
-                </section>
-                <div class="headshotWrapper">
-                    <img src="./assets/me.png" alt="A photo of James" class="headshot animated zoomInUp cursorPointer" title="Click me!">
+        <title>James Lewis | Web Developer</title>
+    </head>
+    <body>
+        <header>
+            <div class="headerContent wrapper">
+                <a href="#projects" class="visuallyHidden">Skip to Projects</a>
+                <nav>
+                    <h1>James Lewis</h1>
+                    <ul class="socialLinks">
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/james-lewis-aba632160/"
+                                title="LinkedIn"
+                                ><i
+                                    class="fab fa-linkedin-in"
+                                    aria-label="LinkedIn"
+                                ></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/unifolia" title="GitHub"
+                                ><i
+                                    class="fab fa-github"
+                                    aria-label="GitHub"
+                                ></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/jameslewisdev"
+                                title="Twitter"
+                                ><i
+                                    class="fab fa-twitter"
+                                    aria-label="Twitter"
+                                ></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://medium.com/@james_9108"
+                                title="Medium"
+                                ><i
+                                    class="fab fa-medium"
+                                    aria-label="Medium"
+                                ></i
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="infoAndPicture">
+                    <section>
+                        <p>
+                            Hello! 👨🏻‍💻 I'm James and I’m a full-stack (skewed
+                            towards front-end) web developer and software
+                            engineer based in Toronto, Canada. I hope to make
+                            the web a beautiful, fun, and accessible place for
+                            everyone.
+                        </p>
+                        <p>I am currently looking for new opportunities!</p>
+                        <p>
+                            <a href="#contact"
+                                >Let's connect!
+                                <span role="img" aria-label="A peace sign"
+                                    >✌︎</span
+                                >
+                            </a>
+                        </p>
+                    </section>
+                    <div class="headshotWrapper">
+                        <img
+                            src="./assets/me.png"
+                            alt="A photo of James"
+                            class="headshot animated zoomInUp cursorPointer"
+                            title="Click me!"
+                        />
+                    </div>
                 </div>
+                <label for="scrolltoProjects" class="visuallyHidden"
+                    >Scroll Down To Projects</label
+                >
+                <a
+                    href="#projects"
+                    class="scrollToProjects"
+                    id="scrollToProjects"
+                    aria-label="Scroll Down To Projects"
+                >
+                    <i
+                        class="fas fa-angle-double-down cursorPointer animate pulse"
+                    ></i>
+                </a>
             </div>
-            <label for="scrolltoProjects" class="visuallyHidden">Scroll Down To Projects</label>
-            <button class="scrollToProjects" id="scrollToProjects" aria-label="Scroll Down To Projects">
-                <i class="fas fa-angle-double-down cursorPointer animate pulse"></i>
-            </button>
-        </div>
-    </header>
-    <main class="wrapper">
-        <section id="projects" class="projectsSection">
-            <h2>Projects</h2>
-            <div class="projectsContainer">
-                <section class="github-app" data-aos="fade-up">
-                    <h3>Trending GitHub Repo Viewer 3000</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/github.png" alt="A photo of the app 'Trending GitHub Repo Viewer 3000'">
-                        </div>
-                        <div class="projectInfo">
-                            <p>Look at 2022's top GitHub repos and get inspired!</p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>React,</span>
-                                    <span>TypeScript,</span>
-                                    <span>RESTful APIs,</span> 
-                                    <span>Jest 🤹,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/github-app/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/github-app">GitHub</a>
-                                </button>
+        </header>
+        <main class="wrapper">
+            <section id="projects" class="projectsSection">
+                <h2>Projects</h2>
+                <div class="projectsContainer">
+                    <section class="github-app" data-aos="fade-up">
+                        <h3>Trending GitHub Repo Viewer 3000</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/github.png"
+                                    alt="A photo of the app 'Trending GitHub Repo Viewer 3000'"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    Look at 2022's top GitHub repos and get
+                                    inspired!
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>React,</a>
+                                        <a>TypeScript,</a>
+                                        <a>RESTful APIs,</a>
+                                        <a>Jest 🤹,</a>
+                                        <a>SCSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://jameslewis.io/github-app/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/github-app"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="hmmstagram" data-aos="fade-up">
-                    <h3>Hmmstagram</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/hmmstagram.png" alt="A photo of the app 'Hmmstagram' on a mobile phone">
-                        </div>
-                        <div class="projectInfo">
-                            <p>Like some sort of dystopian Instagram, Hmmstagram is a photo sharing service that allows the user to look at, comment on, like, and even create randomly generated posts! It'll make you go "hmm... 🤔"
-                            </p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>React,</span>
-                                    <span>Firebase,</span>
-                                    <span>RESTful APIs,</span> <span>JavaScript,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/hmmstagram/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/hmmstagram">GitHub</a>
-                                </button>
+                    </section>
+                    <section class="hmmstagram" data-aos="fade-up">
+                        <h3>Hmmstagram</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/hmmstagram.png"
+                                    alt="A photo of the app 'Hmmstagram' on a mobile phone"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    Like some sort of dystopian Instagram,
+                                    Hmmstagram is a photo sharing service that
+                                    allows the user to look at, comment on,
+                                    like, and even create randomly generated
+                                    posts! It'll make you go "hmm... 🤔"
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>React,</a>
+                                        <a>Firebase,</a>
+                                        <a>RESTful APIs,</a> <a>JavaScript,</a>
+                                        <a>SCSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://jameslewis.io/hmmstagram/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/hmmstagram"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="wurdle" data-aos="fade-up">
-                    <h3>wurdle</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/wurdle.jpg" alt="A photo of the app 'wurdle'">
-                        </div>
-                        <div class="projectInfo">
-                            <p>"Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022. Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position."</p>
-                            <p>This... is... almost that.</p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>React,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/wurdle/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/wurdle">GitHub</a>
-                                </button>
+                    </section>
+                    <section class="wurdle" data-aos="fade-up">
+                        <h3>wurdle</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/wurdle.jpg"
+                                    alt="A photo of the app 'wurdle'"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    "Wordle is a web-based word game created and
+                                    developed by Welsh software engineer Josh
+                                    Wardle, and owned and published by The New
+                                    York Times Company since 2022. Players have
+                                    six attempts to guess a five-letter word,
+                                    with feedback given for each guess in the
+                                    form of colored tiles indicating when
+                                    letters match or occupy the correct
+                                    position."
+                                </p>
+                                <p>This... is... almost that.</p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>React,</a>
+                                        <a>SCSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a href="https://jameslewis.io/wurdle/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/wurdle"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="pathsAndPodcasts" data-aos="fade-up">
-                    <h3>Paths and Podcasts</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/pathsAndPodcasts.png" alt="A photo of the app 'Paths and Podcasts' on a laptop">
-                        </div>
-                        <div class="projectInfo">
-                            <p>Paths and Podcasts allows the user to select a starting location, a destination, and a podcast... and tells them how to travel based on the length of the episode. This wacky app was mob programmed with the great group of
-                                <a href="https://russellbentulan.com/">Russell Bentulan</a>,
-                                <a href="http://www.alissacheng.com/">Alissa Cheng</a>, and
-                                <a href="https://www.coreyderouin.com/">Corey Derouin.</a>
-                            </p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using 
-                                    <span>React,</span> 
-                                    <span>RESTful APIs,</span> <span>JavaScript,</span> 
-                                    <span>HTML5,</span> 
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://podcast-prioritizer.github.io/podcast-prioritizer/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/Podcast-Prioritizer/podcast-prioritizer">GitHub</a>
-                                </button>
+                    </section>
+                    <section class="pathsAndPodcasts" data-aos="fade-up">
+                        <h3>Paths and Podcasts</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/pathsAndPodcasts.png"
+                                    alt="A photo of the app 'Paths and Podcasts' on a laptop"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    Paths and Podcasts allows the user to select
+                                    a starting location, a destination, and a
+                                    podcast... and tells them how to travel
+                                    based on the length of the episode. This
+                                    wacky app was mob programmed with the great
+                                    group of
+                                    <a href="https://russellbentulan.com/"
+                                        >Russell Bentulan</a
+                                    >,
+                                    <a href="http://www.alissacheng.com/"
+                                        >Alissa Cheng</a
+                                    >, and
+                                    <a href="https://www.coreyderouin.com/"
+                                        >Corey Derouin.</a
+                                    >
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Doto Skills"
+                                    >
+                                        Made using
+                                        <a>React,</a>
+                                        <a>RESTful APIs,</a> <a>JavaScript,</a>
+                                        <a>HTML5,</a>
+                                        <a>SCSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://podcast-prioritizer.github.io/podcast-prioritizer/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/Podcast-Prioritizer/podcast-prioritizer"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="pacRem" data-aos="fade-up">
-                    <h3>Pac-Rem</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/pac-rem.png" alt="A photo of the app 'Pac-Rem' on a tablet">
-                        </div>
-                        <div class="projectInfo">
-                            <p>
-                                Based on a classic, Pac-Rem is a game in which the player (my cat) has to collect all the catnip before the dog can! This project is all vanilla - no libraries or preprocessors were used.
-                            </p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>JavaScript,</span>
-                                    <span>HTML5,</span>
-                                    <span>CSS3</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/pac-rem/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/pac-rem">GitHub</a>
-                                </button>
+                    </section>
+                    <section class="pacRem" data-aos="fade-up">
+                        <h3>Pac-Rem</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/pac-rem.png"
+                                    alt="A photo of the app 'Pac-Rem' on a tablet"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    Based on a classic, Pac-Rem is a game in
+                                    which the player (my cat) has to collect all
+                                    the catnip before the dog can! This project
+                                    is all vanilla - no libraries or
+                                    preprocessors were used.
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>JavaScript,</a>
+                                        <a>HTML5,</a>
+                                        <a>CSS3</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a href="https://jameslewis.io/pac-rem/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/pac-rem"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="marsometer" data-aos="fade-up">
-                    <h3>Marsometer</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/marsometer.png" alt="A photo of the app 'Marsometer' on a mobile phone">
-                        </div>
-                        <div class="projectInfo">
-                            <p>This is an app that allows the user to input a city and compare its current temperature to that of Mars. It uses
-                                APIs
-                                from NASA InSight, OpenWeatherMap, and Teleport - and was done in collaboration with the wonderful and talented
-                                <a href="http://www.bethancdavies.com/">Bethan Davies.</a>
-                            </p>
-                            <p>As one of the APIs used is effectively dead, only the reference code will be shown - <a href="https://www.theregister.com/2022/05/18/insight_mars_nasa/" style="text-decoration: underline">Details</a></p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>jQuery,</span>
-                                    <span>RESTful APIs,</span> <span>JavaScript,</span>
-                                    <span>HTML5,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <!-- <button tabindex="-1">
+                    </section>
+                    <section class="marsometer" data-aos="fade-up">
+                        <h3>Marsometer</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/marsometer.png"
+                                    alt="A photo of the app 'Marsometer' on a mobile phone"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    This is an app that allows the user to input
+                                    a city and compare its current temperature
+                                    to that of Mars. It uses APIs from NASA
+                                    InSight, OpenWeatherMap, and Teleport - and
+                                    was done in collaboration with the wonderful
+                                    and talented
+                                    <a href="http://www.bethancdavies.com/"
+                                        >Bethan Davies.</a
+                                    >
+                                </p>
+                                <p>
+                                    As one of the APIs used is effectively dead,
+                                    only the reference code will be shown -
+                                    <a
+                                        href="https://www.theregister.com/2022/05/18/insight_mars_nasa/"
+                                        style="text-decoration: underline"
+                                        >Details</a
+                                    >
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>jQuery,</a>
+                                        <a>RESTful APIs,</a>
+                                        <a>JavaScript,</a>
+                                        <a>HTML5,</a>
+                                        <a>SCSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <!-- <button tabindex="-1">
                                     <a href="https://jameslewis.io/marsometer/">Live</a>
                                 </button> -->
-                                <button tabindex="-1">
-                                    <a href="https://github.com/Marsometer/marsometer">GitHub</a>
-                                </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/Marsometer/marsometer"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="cashComrade" data-aos="fade-up">
-                    <h3>Cash Comrade</h3>
-                    <div class="projectContent">
-                        <div class="projectPicture">
-                            <img src="./assets/cashComrade.png" alt="A photo of the app 'Cash Comrade' on a tablet">
-                        </div>
-                        <div class="projectInfo">
-                            <p>
-                                Cash Comrade is a dynamic app that helps the user keep track of the money they want to save. One can enter the amount they want to reach, add or subtract money, and even estimate the time that it'll take to reach their goal.
-                            </p>
-                            <p>
-                                <span class="scrollToSkills" aria-label="Scroll Down to Skills">
-                                    Made using
-                                    <span>jQuery,</span>
-                                    <span>JavaScript,</span>
-                                    <span>HTML5,</span>
-                                    <span>SCSS</span>
-                                </span>
-                            </p>
-                            <div class="projectLinks">
-                                <button tabindex="-1">
-                                    <a href="https://jameslewis.io/cashcomrade/">Live</a>
-                                </button>
-                                <button tabindex="-1">
-                                    <a href="https://github.com/unifolia/cashComrade">GitHub</a>
-                                </button>
+                    </section>
+                    <section class="cashComrade" data-aos="fade-up">
+                        <h3>Cash Comrade</h3>
+                        <div class="projectContent">
+                            <div class="projectPicture">
+                                <img
+                                    src="./assets/cashComrade.png"
+                                    alt="A photo of the app 'Cash Comrade' on a tablet"
+                                />
+                            </div>
+                            <div class="projectInfo">
+                                <p>
+                                    Cash Comrade is a dynamic app that helps the
+                                    user keep track of the money they want to
+                                    save. One can enter the amount they want to
+                                    reach, add or subtract money, and even
+                                    estimate the time that it'll take to reach
+                                    their goal.
+                                </p>
+                                <p>
+                                    <span
+                                        class="scrollToSkills"
+                                        aria-label="Scroll Down to Skills"
+                                    >
+                                        Made using
+                                        <a>jQuery</a>
+                                        <a>JavaScript</a>
+                                        <a>HTML5</a>
+                                        <a>SCS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://jameslewis.io/cashcomrade/"
+                                            >Live</a
+                                        >
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/cashComrade"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <section id="skills" class="skills">
-            <h2>Skillset</h2>
-            <ul class="currentSkills">
-                <li><i class="devicon-html5-plain"></i>HTML5</li>
-                <li><i class="devicon-css3-plain"></i>CSS3</li>
-                <li><i class="devicon-sass-original"></i>SASS</li>
-                <li><i class="devicon-javascript-plain"></i>JavaScript</li>
-                <li><i class="devicon-jquery-plain"></i>jQuery</li>
-                <li><i class="devicon-react-original"></i>React</li>
-                <li><i class="devicon-typescript-plain"></i>TypeScript</li>
-                <li><i class="devicon-nodejs-plain"></i>Node.js</li>
-                <li><i class="devicon-express-original"></i>Express</li>
-                <li><i class="devicon-google-plain"></i>Firebase</li>
-                <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
-                <li><i class="devicon-git-plain"></i>Git</li>
-                <li><i class="devicon-visualstudio-plain"></i>VSCode</li>
-            </ul>
-            <h3>I'd Love To Learn</h3>
-            <ul class="futureSkills">
-                <li><i class="devicon-rust-plain"></i>Rust</li>
-                <li><i class="devicon-go-plain"></i>Go</li>
-                <li><i class="devicon-angularjs-plain"></i>Angular</li>
-                <li><i class="devicon-python-plain"></i>Python</li>
-            </ul>
-        </section>
-        <section class="outsideOfTech">
-            <h2>Outside of Tech</h2>
-            <div class="jamesIllustration">
-                <button class="checkbox" aria-hidden="true" tabindex="-1"></button>
-                <img src="./assets/jamesCouch.png" alt="A cartoon of a man on a couch listening to music. There is a cat sleeping next to him.">
-            </div>
-            <div class="jamesInfo">
-                <p>When I'm not busy typing away, I can usually be found reading (I love a good novel or philosophy book), writing music, or hanging out with my cat Rembrandt. I'm a big fan of rock climbing too, but that's not happening much these days because it's a) very cold outside and b) very virus-y inside. Wear a mask.</p>
-                <p>I'm deeply passionate about inclusivity and social justice, and I hope that my work can make a positive impact on the world.</p>
-                <p>BTW, click the lamp for dark mode! Cool, right?</p>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Get in Touch</h2>
-            <form action="https://formspree.io/mvoklenw" method="POST">
-                <div class="topFormRow">
-                    <label for="enterName" class="visuallyHidden">Enter Your Name</label>
-                    <input type="text" name="name" id="enterName" placeholder="Your Name">
-                    <label for="enterEmail" class="visuallyHidden">Enter Your Email</label>
-                    <input type="email" name="_replyto" id="enterEmail" placeholder="Your Email">
+                    </section>
                 </div>
-                <label for="enterMessage" class="visuallyHidden">Enter Your Message</label>
-                <textarea name="message" id="enterMessage" cols="30" rows="10" placeholder=""></textarea>
-                <label for="submitMessage" class="visuallyHidden">Submit Your Message</label>
-                <button type="submit" id="submitMessage">Submit</button>
-                <p>Or email me 
-                    <a href="mailto:james@jameslewis.io?Subject=Hello%20James" target="_top" title="at james@jameslewis.io">directly</a>
-                </p>
-            </form>
-        </section>
-    </main>
-    <footer class="wrapper">
-        <p>Design by me - 
-            <a href="https://www.freepik.com/zlatko-plamenov">Vectors by Zlatko Plamenov</a>
-        </p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./javascript.js"></script>
-</body>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skillset</h2>
+                <ul class="currentSkills">
+                    <li><i class="devicon-html5-plain"></i>HTML5</li>
+                    <li><i class="devicon-css3-plain"></i>CSS3</li>
+                    <li><i class="devicon-sass-original"></i>SASS</li>
+                    <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+                    <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                    <li><i class="devicon-react-original"></i>React</li>
+                    <li><i class="devicon-typescript-plain"></i>TypeScript</li>
+                    <li><i class="devicon-nodejs-plain"></i>Node.js</li>
+                    <li><i class="devicon-express-original"></i>Express</li>
+                    <li><i class="devicon-google-plain"></i>Firebase</li>
+                    <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
+                    <li><i class="devicon-git-plain"></i>Git</li>
+                    <li><i class="devicon-visualstudio-plain"></i>VSCode</li>
+                </ul>
+                <h3>I'd Love To Learn (or Am Learning)</h3>
+                <ul class="futureSkills">
+                    <li><i class="devicon-cplusplus-plain"></i>C++</li>
+                    <li><i class="devicon-rust-plain"></i>Rust</li>
+                    <li><i class="devicon-go-plain"></i>Go</li>
+                    <li><i class="devicon-python-plain"></i>Python</li>
+                </ul>
+            </section>
+            <section class="outsideOfTech">
+                <h2>Outside of Tech</h2>
+                <div class="jamesIllustration">
+                    <button
+                        class="checkbox"
+                        aria-hidden="true"
+                        tabindex="-1"
+                    ></button>
+                    <img
+                        src="./assets/jamesCouch.png"
+                        alt="A cartoon of a man on a couch listening to music. There is a cat sleeping next to him."
+                    />
+                </div>
+                <div class="jamesInfo">
+                    <p>
+                        When I'm not busy typing away, I can usually be found
+                        reading (I love a good novel or philosophy book),
+                        writing music, or hanging out with my cat Rembrandt. I'm
+                        a big fan of rock climbing too, but that's not happening
+                        much these days because it's a) very cold outside and b)
+                        very virus-y inside. Wear a mask.
+                    </p>
+                    <p>
+                        I'm deeply passionate about inclusivity and social
+                        justice, and I hope that my work can make a positive
+                        impact on the world.
+                    </p>
+                    <p>BTW, click the lamp for dark mode! Cool, right?</p>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Get in Touch</h2>
+                <form action="https://formspree.io/mvoklenw" method="POST">
+                    <div class="topFormRow">
+                        <label for="enterName" class="visuallyHidden"
+                            >Enter Your Name</label
+                        >
+                        <input
+                            type="text"
+                            name="name"
+                            id="enterName"
+                            placeholder="Your Name"
+                        />
+                        <label for="enterEmail" class="visuallyHidden"
+                            >Enter Your Email</label
+                        >
+                        <input
+                            type="email"
+                            name="_replyto"
+                            id="enterEmail"
+                            placeholder="Your Email"
+                        />
+                    </div>
+                    <label for="enterMessage" class="visuallyHidden"
+                        >Enter Your Message</label
+                    >
+                    <textarea
+                        name="message"
+                        id="enterMessage"
+                        cols="30"
+                        rows="10"
+                        placeholder=""
+                    ></textarea>
+                    <label for="submitMessage" class="visuallyHidden"
+                        >Submit Your Message</label
+                    >
+                    <button type="submit" id="submitMessage">Submit</button>
+                    <p>
+                        Or email me
+                        <a
+                            href="mailto:james@jameslewis.io?Subject=Hello%20James"
+                            target="_top"
+                            title="at james@jameslewis.io"
+                            >directly</a
+                        >
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer class="wrapper">
+            <p>
+                Design by me -
+                <a href="https://www.freepik.com/zlatko-plamenov"
+                    >Vectors by Zlatko Plamenov</a
+                >
+            </p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./javascript.js"></script>
+    </body>
 </html>
