@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="https://jameslewis.io/styles/style.css" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -29,16 +29,13 @@
         <div class="error404 wrapper">
             <h1>Oh no!</h1>
             <p>
-                Ok, this is, like, super awkward. Whatever you're looking for
-                is... uh... basically not here. If this is a serious issue,
-                please email me at james@jameslewis.io. My apologies.
+                Ok, this is, like, super awkward. Whatever you're looking for is... uh... basically
+                not here. If this is a serious issue, please email me at james@jameslewis.io. My
+                apologies.
             </p>
             <div class="ghostWrapper" aria-hidden="true">
                 <svg viewBox="0 0 420 162">
-                    <a
-                        href="https://www.codeseek.co/marinda-s"
-                        class="ghostLink"
-                    >
+                    <a href="https://www.codeseek.co/marinda-s" class="ghostLink">
                         <g class="ghost">
                             <g class="bodyRect">
                                 <path
@@ -59,10 +56,7 @@
                                 <path class="feetPx2" d="M16 96h16v16H16z" />
                                 <path class="feetPx1" d="M0 96h16v16H0z" />
                             </g>
-                            <path
-                                class="eyeballs"
-                                d="M33 32h32v32H33zM80 32h32v32H80z"
-                            />
+                            <path class="eyeballs" d="M33 32h32v32H33zM80 32h32v32H80z" />
                             <path class="eye1" d="M49 48h16v16H49z" />
                             <path class="eye2" d="M80 48h16v16H80z" />
                         </g>
