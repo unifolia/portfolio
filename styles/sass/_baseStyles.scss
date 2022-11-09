@@ -1,20 +1,21 @@
-@import 'mixins';
+@import "mixins";
 
-$headerFont: 'PT Sans', sans-serif;
-$bodyFont: 'noto sans', sans-serif;
+$headerFont: "PT Sans", sans-serif;
+$bodyFont: "noto sans", sans-serif;
 
 $backgroundColor: #faf3ed;
 $accentColor: #9cb89480;
 $secondAccentColor: #87a3ca;
 $fontColor: #1d1d1d;
 $nightFontColor: #e9d8c4;
-$pacColor: #CB2647;
+$pacColor: #cb2647;
 // Not currently in use ⬇️
-// $nightAccentColor: #4a6385; 
+// $nightAccentColor: #4a6385;
 
 html {
     font-size: 125%;
-};
+    scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -22,16 +23,16 @@ h3,
 button,
 li {
     font-family: $headerFont;
-};
+}
 
 p {
     font-family: $bodyFont;
-};
+}
 
 a {
     text-decoration: none;
     color: $fontColor;
-};
+}
 
 a,
 button,
@@ -39,43 +40,42 @@ input,
 textarea {
     &:focus-within {
         outline: 2px dotted $fontColor;
-    };
-};
+    }
+}
 
 img {
     width: 100%;
     height: auto;
-};
+}
 
 body {
     background-color: $backgroundColor;
     color: $fontColor;
-};
-
+}
 
 main section {
     padding: 25px 0;
-};
+}
 
 .wrapper {
     width: 87.5%;
     max-width: 1600px;
     margin: 0 auto;
-};
+}
 
 .cursorPointer {
     cursor: pointer;
-};
+}
 
-.visuallyHidden:not(:focus):not(:active) { 
+.visuallyHidden:not(:focus):not(:active) {
     position: absolute !important;
-    height: 1px; 
+    height: 1px;
     width: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
-};
+}
 
 // 🤷🏻‍♂️
 .nightTime {
@@ -97,25 +97,31 @@ main section {
     textarea,
     textarea::placeholder {
         color: $nightFontColor;
-    };
+    }
     section a,
     span span,
     .projectInfo p:hover > a,
     .projectInfo p:hover > span span {
         &::after {
             background: #a57589;
-        };
+        }
         &:hover:after,
         &:focus-within::after {
             opacity: 0.4;
         }
-    };
+    }
     a,
     button,
     input,
     textarea {
-    &:focus-within {
-        outline: 2px dotted lighten($color: $secondAccentColor, $amount: 10);
-        };
-    };
-};
+        &:focus-within {
+            outline: 2px dotted lighten($color: $secondAccentColor, $amount: 10);
+        }
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
