@@ -314,7 +314,7 @@ img {
 }
 
 body {
-  background-color: #faf3ed;
+  background-color: rgba(232, 228, 217, 0.703);
   color: #1d1d1d;
 }
 
@@ -388,7 +388,7 @@ main section {
 .nightTime button:focus-within,
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
-  outline: 2px dotted #aabeda;
+  outline: 2px dotted rgba(189, 216, 173, 0.6823529412);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -398,10 +398,6 @@ main section {
 }
 a.visuallyHidden {
   font-family: "noto sans", sans-serif;
-}
-
-header {
-  height: 100vh;
 }
 
 .headerContent {
@@ -439,12 +435,12 @@ nav h1:hover::after {
   width: 80%;
   bottom: -2.5px;
   left: 10%;
-  border-bottom: 4px solid rgba(156, 184, 148, 0.5019607843);
+  border-bottom: 4px solid rgba(161, 200, 138, 0.6823529412);
   border-radius: 50%;
   transform: rotateZ(0.5deg);
 }
 nav ul {
-  width: 30%;
+  width: 12.5%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -466,7 +462,7 @@ nav ul li:hover > a {
     text-align: center;
   }
   nav ul {
-    width: 65%;
+    width: 25%;
     padding: 50px 0 0 0;
     margin: 0 auto;
   }
@@ -476,7 +472,7 @@ nav ul li:hover > a {
 }
 @media (max-width: 770px) and (max-width: 590px) {
   nav ul {
-    width: 87.5%;
+    width: 50%;
   }
 }
 @media (max-width: 416px) {
@@ -527,7 +523,7 @@ nav ul li:hover > a {
   width: 100%;
   height: 73%;
   z-index: -1;
-  background: #87a3ca;
+  background: rgba(161, 200, 138, 0.6823529412);
   opacity: 0.25;
   border-radius: 2px;
   transition: all 0.3s;
@@ -546,7 +542,7 @@ nav ul li:hover > a {
 }
 .infoAndPicture .headshotWrapper img:hover {
   opacity: 1;
-  box-shadow: 10px 10px rgba(156, 184, 148, 0.5019607843);
+  box-shadow: 10px 10px rgba(161, 200, 138, 0.6823529412);
 }
 @media (max-width: 817px) {
   .infoAndPicture {
@@ -578,7 +574,7 @@ header .scrollToProjects .fa-angle-double-down {
           animation-iteration-count: infinite;
 }
 header .scrollToProjects .fa-angle-double-down:hover {
-  text-shadow: 0px 0px 10px #87a3ca;
+  text-shadow: 0px 0px 10px rgba(161, 200, 138, 0.6823529412);
 }
 @media (max-width: 590px) {
   header .scrollToProjects {
@@ -621,7 +617,7 @@ img {
 }
 
 body {
-  background-color: #faf3ed;
+  background-color: rgba(232, 228, 217, 0.703);
   color: #1d1d1d;
 }
 
@@ -695,7 +691,7 @@ main section {
 .nightTime button:focus-within,
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
-  outline: 2px dotted #aabeda;
+  outline: 2px dotted rgba(189, 216, 173, 0.6823529412);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -705,7 +701,7 @@ main section {
 }
 main {
   border-radius: 25px;
-  background-color: #fcf7f3;
+  background-color: rgba(235, 231, 222, 0.703);
 }
 
 main section {
@@ -727,7 +723,7 @@ h2:hover::after {
   bottom: -5px;
   left: 5%;
   width: 90%;
-  border-bottom: 4px solid rgba(156, 184, 148, 0.5019607843);
+  border-bottom: 4px solid rgba(161, 200, 138, 0.6823529412);
   border-radius: 35%;
 }
 @media (max-width: 590px) {
@@ -744,7 +740,7 @@ h2:hover::after {
     bottom: -2px;
     left: 25%;
     width: 50%;
-    border-bottom: 3px solid rgba(156, 184, 148, 0.5019607843);
+    border-bottom: 3px solid rgba(161, 200, 138, 0.6823529412);
     border-radius: 35%;
   }
 }
@@ -808,7 +804,7 @@ h3 {
   width: 100%;
   height: 73%;
   z-index: -1;
-  background: #87a3ca;
+  background: rgba(161, 200, 138, 0.6823529412);
   opacity: 0.25;
   border-radius: 2px;
   transition: all 0.3s;
@@ -1003,13 +999,13 @@ h3 {
   border: none;
   border-radius: 2px;
   background: rgba(171, 171, 171, 0.3);
-  box-shadow: 3px 5px rgba(156, 184, 148, 0.5019607843);
+  box-shadow: 3px 5px rgba(161, 200, 138, 0.6823529412);
 }
 .projectLinks button:hover {
   position: relative;
   top: 4px;
   left: 2px;
-  box-shadow: 1px 1px rgba(156, 184, 148, 0.5019607843);
+  box-shadow: 1px 1px rgba(161, 200, 138, 0.6823529412);
 }
 .projectLinks button a {
   display: inline-block;
@@ -1098,7 +1094,7 @@ form textarea {
   padding: 5px 5px 5px 10px;
   background: none;
   border: none;
-  border-bottom: 2px solid rgba(156, 184, 148, 0.5019607843);
+  border-bottom: 2px solid rgba(161, 200, 138, 0.6823529412);
   margin: 10px 0;
   resize: none;
 }
@@ -1123,7 +1119,7 @@ form textarea {
   }
 }
 form textarea {
-  border: 2px solid rgba(156, 184, 148, 0.5019607843);
+  border: 2px solid rgba(161, 200, 138, 0.6823529412);
   border-radius: 5px;
   padding: 10px;
 }
@@ -1154,14 +1150,14 @@ form button {
   border: none;
   border-radius: 5px;
   background: rgba(171, 171, 171, 0.3);
-  box-shadow: 4px 6px rgba(156, 184, 148, 0.5019607843);
+  box-shadow: 4px 6px rgba(161, 200, 138, 0.6823529412);
 }
 form button:hover, form button:focus-within {
   position: relative;
   top: 4px;
   left: 2px;
   cursor: pointer;
-  box-shadow: 2px 2px rgba(156, 184, 148, 0.5019607843);
+  box-shadow: 2px 2px rgba(161, 200, 138, 0.6823529412);
 }
 form p {
   text-align: center;
@@ -1179,7 +1175,7 @@ form p a::after {
   width: 100%;
   height: 73%;
   z-index: -1;
-  background: #87a3ca;
+  background: rgba(161, 200, 138, 0.6823529412);
   opacity: 0.25;
   border-radius: 2px;
   transition: all 0.3s;
@@ -1228,7 +1224,7 @@ img {
 }
 
 body {
-  background-color: #faf3ed;
+  background-color: rgba(232, 228, 217, 0.703);
   color: #1d1d1d;
 }
 
@@ -1302,7 +1298,7 @@ main section {
 .nightTime button:focus-within,
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
-  outline: 2px dotted #aabeda;
+  outline: 2px dotted rgba(189, 216, 173, 0.6823529412);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -1349,7 +1345,7 @@ img {
 }
 
 body {
-  background-color: #faf3ed;
+  background-color: rgba(232, 228, 217, 0.703);
   color: #1d1d1d;
 }
 
@@ -1423,7 +1419,7 @@ main section {
 .nightTime button:focus-within,
 .nightTime input:focus-within,
 .nightTime textarea:focus-within {
-  outline: 2px dotted #aabeda;
+  outline: 2px dotted rgba(189, 216, 173, 0.6823529412);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -1451,13 +1447,13 @@ main section {
   width: 80%;
   bottom: -2.5px;
   left: 10%;
-  border-bottom: 4px solid rgba(156, 184, 148, 0.5019607843);
+  border-bottom: 4px solid rgba(161, 200, 138, 0.6823529412);
   border-radius: 50%;
   transform: rotateZ(0.5deg);
 }
 .error404 a {
   font-family: "PT Sans", sans-serif;
-  border-bottom: 2px solid rgba(156, 184, 148, 0.5019607843);
+  border-bottom: 2px solid rgba(161, 200, 138, 0.6823529412);
   font-size: 2rem;
 }
 
