@@ -287,6 +287,7 @@ html {
 h1,
 h2,
 h3,
+figcaption,
 button,
 li {
   font-family: "PT Sans", sans-serif;
@@ -544,6 +545,10 @@ nav ul li:hover > a {
   opacity: 1;
   box-shadow: 10px 10px rgba(161, 200, 138, 0.6823529412);
 }
+.infoAndPicture .headshotWrapper figcaption {
+  font-size: 0.5rem;
+  margin-top: 10px;
+}
 @media (max-width: 817px) {
   .infoAndPicture {
     flex-direction: column;
@@ -590,6 +595,7 @@ html {
 h1,
 h2,
 h3,
+figcaption,
 button,
 li {
   font-family: "PT Sans", sans-serif;
@@ -1197,6 +1203,7 @@ html {
 h1,
 h2,
 h3,
+figcaption,
 button,
 li {
   font-family: "PT Sans", sans-serif;
@@ -1318,6 +1325,7 @@ html {
 h1,
 h2,
 h3,
+figcaption,
 button,
 li {
   font-family: "PT Sans", sans-serif;

@@ -127,6 +127,10 @@ nav {
                 box-shadow: 10px 10px $accentColor;
             }
         }
+        figcaption {
+            font-size: 0.5rem;
+            margin-top: 10px;
+        }
     }
 
     @include width-817 {
