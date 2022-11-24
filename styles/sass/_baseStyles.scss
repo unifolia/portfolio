@@ -3,9 +3,8 @@
 $headerFont: "PT Sans", sans-serif;
 $bodyFont: "noto sans", sans-serif;
 
-$backgroundColor: #faf3ed;
-$accentColor: #9cb89480;
-$secondAccentColor: #87a3ca;
+$backgroundColor: rgba(232, 228, 217, 0.703);
+$accentColor: #a1c88aae;
 $fontColor: #1d1d1d;
 $nightFontColor: #e9d8c4;
 $pacColor: #cb2647;
@@ -115,7 +114,7 @@ main section {
     input,
     textarea {
         &:focus-within {
-            outline: 2px dotted lighten($color: $secondAccentColor, $amount: 10);
+            outline: 2px dotted lighten($color: $accentColor, $amount: 10);
         }
     }
 }
