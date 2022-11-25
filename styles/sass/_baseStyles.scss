@@ -3,13 +3,10 @@
 $headerFont: "PT Sans", sans-serif;
 $bodyFont: "noto sans", sans-serif;
 
-$backgroundColor: rgba(232, 228, 217, 0.703);
+$backgroundColor: #f3e7da;
 $accentColor: #a1c88aae;
 $fontColor: #1d1d1d;
-$nightFontColor: #e9d8c4;
 $pacColor: #cb2647;
-// Not currently in use ⬇️
-// $nightAccentColor: #4a6385;
 
 html {
     font-size: 125%;
@@ -96,7 +93,7 @@ main section {
     input::placeholder,
     textarea,
     textarea::placeholder {
-        color: $nightFontColor;
+        color: $backgroundColor;
     }
     section a,
     span span,

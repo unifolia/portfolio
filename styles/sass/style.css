@@ -315,7 +315,7 @@ img {
 }
 
 body {
-  background-color: rgba(232, 228, 217, 0.703);
+  background-color: #f3e7da;
   color: #1d1d1d;
 }
 
@@ -350,10 +350,10 @@ main section {
   background: #262626;
 }
 .nightTime input::-moz-placeholder, .nightTime textarea::-moz-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime input:-ms-input-placeholder, .nightTime textarea:-ms-input-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime h1,
 .nightTime h2,
@@ -368,7 +368,7 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime section a::after,
 .nightTime span span::after,
@@ -623,7 +623,7 @@ img {
 }
 
 body {
-  background-color: rgba(232, 228, 217, 0.703);
+  background-color: #f3e7da;
   color: #1d1d1d;
 }
 
@@ -658,10 +658,10 @@ main section {
   background: #262626;
 }
 .nightTime input::-moz-placeholder, .nightTime textarea::-moz-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime input:-ms-input-placeholder, .nightTime textarea:-ms-input-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime h1,
 .nightTime h2,
@@ -676,7 +676,7 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime section a::after,
 .nightTime span span::after,
@@ -707,7 +707,7 @@ main section {
 }
 main {
   border-radius: 25px;
-  background-color: rgba(235, 231, 222, 0.703);
+  background-color: #f5ebe0;
 }
 
 main section {
@@ -1017,6 +1017,7 @@ h3 {
   display: inline-block;
   width: 150px;
   height: 100%;
+  padding: 2px 2px 5px;
 }
 @media (max-width: 450px) {
   .projectLinks {
@@ -1231,7 +1232,7 @@ img {
 }
 
 body {
-  background-color: rgba(232, 228, 217, 0.703);
+  background-color: #f3e7da;
   color: #1d1d1d;
 }
 
@@ -1266,10 +1267,10 @@ main section {
   background: #262626;
 }
 .nightTime input::-moz-placeholder, .nightTime textarea::-moz-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime input:-ms-input-placeholder, .nightTime textarea:-ms-input-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime h1,
 .nightTime h2,
@@ -1284,7 +1285,7 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime section a::after,
 .nightTime span span::after,
@@ -1353,7 +1354,7 @@ img {
 }
 
 body {
-  background-color: rgba(232, 228, 217, 0.703);
+  background-color: #f3e7da;
   color: #1d1d1d;
 }
 
@@ -1388,10 +1389,10 @@ main section {
   background: #262626;
 }
 .nightTime input::-moz-placeholder, .nightTime textarea::-moz-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime input:-ms-input-placeholder, .nightTime textarea:-ms-input-placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime h1,
 .nightTime h2,
@@ -1406,7 +1407,7 @@ main section {
 .nightTime input::placeholder,
 .nightTime textarea,
 .nightTime textarea::placeholder {
-  color: #e9d8c4;
+  color: #f3e7da;
 }
 .nightTime section a::after,
 .nightTime span span::after,
