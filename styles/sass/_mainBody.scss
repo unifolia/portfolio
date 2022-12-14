@@ -264,6 +264,14 @@ h3 {
     }
 }
 
+.automaton {
+    .projectContent,
+    .projectInfo {
+        align-items: center;
+        justify-content: center !important;
+    }
+}
+
 .projectLinks {
     margin: 20px 0;
     button {
