@@ -4,7 +4,9 @@
   "description": "",
   "main": "javascript.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildCSS": "esbuild --bundle styles/sass/style.css --outfile=styles/bundled.css",
+    "buildJS": "esbuild scripts/app.js --bundle --minify --outfile=scripts/bundled.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/unifolia/portfolio#readme",
   "devDependencies": {
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "esbuild": "0.16.5"
   }
 }

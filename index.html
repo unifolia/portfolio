@@ -10,6 +10,10 @@
         />
         <meta name="theme-color" content="#ebfaea" />
 
+        <link
+            href="https://fonts.googleapis.com/css?family=PT+Sans:700|Noto+Sans+JP&display=swap"
+            rel="stylesheet"
+        />
         <script src="https://kit.fontawesome.com/4195f42b5c.js" crossorigin="anonymous"></script>
         <link
             rel="apple-touch-icon"
@@ -30,10 +34,6 @@
         />
         <link rel="manifest" href="./assets/favicons/site.webmanifest" />
         <link
-            href="https://fonts.googleapis.com/css?family=PT+Sans:700|Noto+Sans+JP&display=swap"
-            rel="stylesheet"
-        />
-        <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
         />
@@ -41,7 +41,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
         />
-        <link rel="stylesheet" href="./styles/sass/style.css" />
+        <link rel="stylesheet" href="./styles/bundled.css" />
 
         <title>James Lewis | Web Developer</title>
     </head>
@@ -106,6 +106,62 @@
             <section id="projects" class="projectsSection">
                 <h2>Projects</h2>
                 <div class="projectsContainer">
+                    <section class="automaton">
+                        <h3>C.A.T.</h3>
+                        <div class="projectContent">
+                            <div class="projectInfo">
+                                <p>Yukon, Canada</p>
+                                <p>
+                                    You're wandering through the forest. You're lost in the dense
+                                    thicket. There's a clearing. A wooden, cozy-looking cabin sits
+                                    right in the centre. You can see some sort of faint glow through
+                                    the window. Huh?
+                                </p>
+                                <p>
+                                    You enter. You find the source of the glow: a strange, alien
+                                    machine in the corner of the main room. "...Hello? Hello?" No
+                                    answer from anywhere in the cabin. The machine piques your
+                                    curiosity, naturally. There are a few buttons. You hesitate for
+                                    a few seconds. Your eyes are glued to them. "Here goes nothing."
+                                </p>
+                                <p>
+                                    The machine starts. You hear the whirr of its engine. Its eerie
+                                    glow gets brighter. Yellow lights blink in some weird, cryptic
+                                    sequence. Loud, organ-like notes bellow through a set of pipes
+                                    at the top of the machine.
+                                </p>
+                                <p>
+                                    The Cellular Automaton Tastiera is web-based synthesizer for
+                                    creating generative music. There are two modes - Classic and
+                                    Random. Classic mode uses a cellular automaton to generate its
+                                    notes (more on that, including starting configurations,
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                                        style="text-decoration: underline"
+                                        >here</a
+                                    >). Random mode is just that: random.
+                                </p>
+                                <p>
+                                    <span class="scrollToSkills" aria-label="Scroll Down to Skills">
+                                        Made using
+                                        <a>TypeScript,</a>
+                                        <a>CSS</a>
+                                    </span>
+                                </p>
+                                <div class="projectLinks">
+                                    <button tabindex="-1">
+                                        <a href="https://jameslewis.io/automaton/">Live</a>
+                                    </button>
+                                    <button tabindex="-1">
+                                        <a
+                                            href="https://github.com/unifolia/cellular-automaton-tastiera/"
+                                            >GitHub</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="github-app">
                         <h3>Trending GitHub Repo Viewer 3000</h3>
                         <div class="projectContent">
@@ -208,51 +264,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- <section class="pathsAndPodcasts">
-                        <h3>Paths and Podcasts</h3>
-                        <div class="projectContent">
-                            <div class="projectPicture">
-                                <img
-                                    src="./assets/pathsAndPodcasts.png"
-                                    alt="A photo of the app 'Paths and Podcasts' on a laptop"
-                                />
-                            </div>
-                            <div class="projectInfo">
-                                <p>
-                                    Paths and Podcasts allows the user to select a starting
-                                    location, a destination, and a podcast... and tells them how to
-                                    travel based on the length of the episode. This wacky app was
-                                    mob programmed with the great group of
-                                    <a href="https://russellbentulan.com/">Russell Bentulan</a>,
-                                    <a href="http://www.alissacheng.com/">Alissa Cheng</a>, and
-                                    <a href="https://www.coreyderouin.com/">Corey Derouin.</a>
-                                </p>
-                                <p>
-                                    <span class="scrollToSkills" aria-label="Scroll Doto Skills">
-                                        Made using
-                                        <a>React,</a>
-                                        <a>RESTful APIs,</a> <a>JavaScript,</a>
-                                        <a>HTML5,</a>
-                                        <a>SCSS</a>
-                                    </span>
-                                </p>
-                                <div class="projectLinks">
-                                    <button tabindex="-1">
-                                        <a
-                                            href="https://podcast-prioritizer.github.io/podcast-prioritizer/"
-                                            >Live</a
-                                        >
-                                    </button>
-                                    <button tabindex="-1">
-                                        <a
-                                            href="https://github.com/Podcast-Prioritizer/podcast-prioritizer"
-                                            >GitHub</a
-                                        >
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
                     <section class="pacRem">
                         <h3>Pac-Rem</h3>
                         <div class="projectContent">
@@ -464,6 +475,6 @@
                 <a href="https://www.freepik.com/zlatko-plamenov">Vectors by Zlatko Plamenov</a>
             </p>
         </footer>
-        <script src="./scripts/app.js"></script>
+        <script src="./scripts/bundled.js"></script>
     </body>
 </html>
